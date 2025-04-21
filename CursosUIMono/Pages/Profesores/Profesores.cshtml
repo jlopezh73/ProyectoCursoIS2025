@@ -1,0 +1,105 @@
+@page
+@using ProyectoCursos.Pages.Profesores
+@model ProfesoresModel
+@{
+    ViewData["Title"] = "Profesores";
+}
+
+<div class="container-fluid">    
+    <nav aria-label="breadcrumb"></nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Index">Principal</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Profesores</li>
+        </ol>
+    </nav>
+    <h1 class="mb-2">Profesores Registrados</h1>    
+    <table class="table table-striped table-bordered table-hover table-responsive">
+        <thead>
+            <tr>                    
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>Especialización</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>    
+        <tbody>                                    
+                @foreach (var profesor in @Model.Profesores)
+                {
+                    <tr>                            
+                        <td><a href="#" onclick="editarProfesor(@profesor.id);">@profesor.nombre</a></td>
+                        <td>@profesor.email</td>
+                        <td>@profesor.telefono</td>
+                        <td>@profesor.especializacion</td>
+                        <td>                                
+                            <button class="btn btn-danger btn-sm" onclick="eliminarProfesor(@profesor.id, '@profesor.nombre');">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </td>
+                    </tr>                     
+                }                
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" onclick="agregarProfesor();"><i class="fas fa-user-plus"></i> &nbsp;Agregar Profesor</button>
+</div>
+
+<div class="modal fade modal-lg" id="agregarProfesorModal" tabindex="-1" aria-labelledby="agregarProfesorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="agregarProfesorModalLabel">Agregar Profesor</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="formaAgregar">
+                    @{ await Html.RenderPartialAsync("ProfesorPartial", Model._Profesor);}                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" onclick="guardarDatosAgregarProfesor();">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" id="editarProfesorPanel" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">Editar Profesor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form method="post" id="formaEditar">
+            @{ await Html.RenderPartialAsync("ProfesorPartial", Model._Profesor);}
+        </form>
+        <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary m-1" data-bs-dismiss="offcanvas">Cancelar</button>
+                <button type="submit" class="btn btn-primary  m-1" onclick="guardarDatosEditarProfesor();">Guardar Cambios</button>
+            </div>
+    </div>
+</div>
+
+<div class="modal fade modal-lg" id="eliminarProfesorModal" tabindex="-1" aria-labelledby="eliminarProfesorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eliminarProfesorModalLabel">Eliminar Profesor</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formaEliminar">
+                    <input type="hidden" id="id" />
+                </form>
+                <h5>¿Está seguro de que desea eliminar al profesor <strong id="nombreProfesorEliminar"></strong>?</h5>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-danger" onclick="guardarDatosEliminarProfesor();">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Profesores.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,127 @@
+@page
+@using ProyectoCursos.Pages.Cursos
+@model CursosModel
+@{
+    ViewData["Title"] = "Cursos";
+}
+
+<div class="container-fluid">
+    <nav aria-label="breadcrumb"></nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Index">Principal</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cursos</li>
+        </ol>
+    </nav>
+    <h1 class="mb-4">Cursos Registrados</h1>
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>                    
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Duración</th>
+                <th>Precio</th>
+                <th>Instructor</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>    
+        <tbody>                                    
+                @foreach (var curso in @Model.Cursos)
+                {
+                    <tr>                            
+                        <td><a href="#" onclick="editarCurso(@curso.id);">@curso.nombre</a></td>
+                        <td>@curso.descripcion</td>
+                        <td>@curso.duracion</td>
+                        <td class="text-end">@curso.precio?.ToString("c2")</td>
+                        <td>@curso.profesor</td>
+                        <td>
+                            
+                            
+                                <button class="btn btn-light btn-sm" onclick="asignarCursoImagen(@curso.id);">
+                                    <i class="fas fa-image"></i> Asignar Imagen
+                                </button>                                
+                            
+                            
+                            <button class="btn btn-link text-danger btn-sm" onclick="eliminarCurso(@curso.id, '@curso.nombre');">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                    
+                }                
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" onclick="agregarCurso();"><i class="fas fa-folder-plus"></i> &nbsp;Agregar Curso</button>
+</div>
+
+<div class="modal fade modal-lg" id="agregarCursoModal" tabindex="-1" aria-labelledby="agregarProfesorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="agregarProfesorModalLabel">Agregar/Editar Curso</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="formaAgregar">
+                    @{ await Html.RenderPartialAsync("CursoPartial", new CursoPartialModel() {Curso=Model.Curso, Profesores=Model.Profesores});}                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" onclick="guardarDatosCurso();">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-lg" id="eliminarCursoModal" tabindex="-1" aria-labelledby="eliminarCursoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eliminarProfesorModalLabel">Eliminar Curso</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formaEliminar">
+                    <input type="hidden" id="id" />
+                </form>
+                <h5>¿Está seguro de que desea eliminar al profesor <strong id="nombreCursoEliminar"></strong>?</h5>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-danger" onclick="guardarDatosEliminarCurso();">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-lg" id="asignarImagenModal" tabindex="-1" aria-labelledby="asignarImagenModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="asignarImagenModalLabel">Asignar/Cambiar Imagen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">                
+                <form id="formaAsignarImagen">
+                    <input type="hidden" id="idCurso" />
+                    <div class="mb-3">
+                        <label for="archivoImagen" class="form-label">Seleccionar Imagen</label>
+                        <input type="file" class="form-control" id="archivoImagen" accept=".jpg, .jpeg, .png" />
+                        <span class="text-danger" id="errorImagen"></span>
+                    </div>
+                    <div class="mb-3">
+                        <img id="imagen" src="" alt="Vista previa de la imagen" style="max-width: 100%; display: none;" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-danger" onclick="guardarImagenCurso();">Asignar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/cursos.js"></script>    
+}
