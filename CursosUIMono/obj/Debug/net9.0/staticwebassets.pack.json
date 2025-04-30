@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/js/cursos.js"
     },
     {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/participantes.js",
+      "PackagePath": "staticwebassets/js/participantes.js"
+    },
+    {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/profesores.js",
       "PackagePath": "staticwebassets/js/profesores.js"
     },
@@ -211,6 +215,22 @@
     {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/dataTables/datatables.css",
+      "PackagePath": "staticwebassets/lib/dataTables/datatables.css"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/dataTables/datatables.js",
+      "PackagePath": "staticwebassets/lib/dataTables/datatables.js"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/dataTables/datatables.min.css",
+      "PackagePath": "staticwebassets/lib/dataTables/datatables.min.css"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/dataTables/datatables.min.js",
+      "PackagePath": "staticwebassets/lib/dataTables/datatables.min.js"
     },
     {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",

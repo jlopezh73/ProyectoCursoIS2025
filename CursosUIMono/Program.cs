@@ -24,6 +24,7 @@ builder.Services.AddDbContext<CursosContext>(options => {
 
 builder.Services.AddScoped<CursoDTO>();
 builder.Services.AddScoped<ProfesorDTO>();
+builder.Services.AddScoped<ParticipanteDTO>();
 builder.Services.AddScoped<RespuestaPeticionDTO>();
 builder.Services.AddSingleton<IMongoClient>(sp =>
 {
@@ -33,10 +34,12 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 
 builder.Services.AddScoped<CursosDAO>();
 builder.Services.AddScoped<ProfesoresDAO>();
+builder.Services.AddScoped<ParticipantesDAO>();
 builder.Services.AddScoped<CursosImagenesDAO>();
 
 builder.Services.AddScoped<ICursosService, CursosService>();
 builder.Services.AddScoped<IProfesoresService, ProfesoresService>();
+builder.Services.AddScoped<IParticipantesService, ParticipantesService>();
 builder.Services.AddScoped<ICursosImagenesService, CursosImagenesMongoDBService>();
 
 var app = builder.Build();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CursosUIMono.Services.Interfaces;
 using CursosUIMono.DTOs;
 
-namespace ProyectoCursos.Pages.Cursos;
+namespace CursosUIMono.Pages.Cursos;
 
 public class CursosModel : PageModel
 {

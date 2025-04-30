@@ -218,3 +218,9 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/SharpCompress.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Snappier.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-rledcil5pu.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/CursosUIMono.sourcelink.json
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-eyr1z8lqjy.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/43bwzzrltt-5mx72iilsw.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/hnuiyci9tf-k2ymjg1vrz.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/igtjw9f53c-v8n06qnj1e.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/f1o1trpt4m-rwq29eauly.gz
