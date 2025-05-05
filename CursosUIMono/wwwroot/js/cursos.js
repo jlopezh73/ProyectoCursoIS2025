@@ -1,4 +1,14 @@
 var agregandoCurso = false;
+var tablaCursos;
+$(document).ready(function () {
+    tablaCursos = new DataTable("#tablaCursos", {
+        language: {
+            url: '//cdn.datatables.net/plug-ins/2.2.2/i18n/es-ES.json',            
+        }
+        
+    });
+    
+});
 
 function agregarCurso() {
     agregandoCurso = true;

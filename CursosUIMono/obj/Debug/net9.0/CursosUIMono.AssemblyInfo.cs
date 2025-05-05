@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CursosUIMono")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ec41116a81be0204638b177ff66c51795808bbe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23a6ae2ecef9491c741bb23b0374d125b69a2abf")]
 [assembly: System.Reflection.AssemblyProductAttribute("CursosUIMono")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CursosUIMono")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -60,29 +60,29 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yi7sletwgz"},{"Name":"integrity","Value":"sha256-GhI8njQ8QNZgXut3S0Dz7GEwv\u002Bd8OOf8rVvBw6GFVCQ="},{"Name":"label","Value":"_content/CursosUIMono/imagenes_cursos/9.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"476730"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022GhI8njQ8QNZgXut3S0Dz7GEwv\u002Bd8OOf8rVvBw6GFVCQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 05:17:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/cursos.humpb3jm0x.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cursos.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"humpb3jm0x"},{"Name":"integrity","Value":"sha256-FznoilVm45DytsJOitvIUCKg\u002B6pOkhrsg9ePGhAHEg8="},{"Name":"label","Value":"_content/CursosUIMono/js/cursos.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6160"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FznoilVm45DytsJOitvIUCKg\u002B6pOkhrsg9ePGhAHEg8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:22:39 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/cursos.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cursos.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ly8hgd6Mh4RFlGTOjEYkFXPcIu9V6VcuT6EQAWQ4JPE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5921"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Ly8hgd6Mh4RFlGTOjEYkFXPcIu9V6VcuT6EQAWQ4JPE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 05:54:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FznoilVm45DytsJOitvIUCKg\u002B6pOkhrsg9ePGhAHEg8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6160"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022FznoilVm45DytsJOitvIUCKg\u002B6pOkhrsg9ePGhAHEg8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:22:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/cursos.rledcil5pu.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cursos.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rledcil5pu"},{"Name":"integrity","Value":"sha256-Ly8hgd6Mh4RFlGTOjEYkFXPcIu9V6VcuT6EQAWQ4JPE="},{"Name":"label","Value":"_content/CursosUIMono/js/cursos.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5921"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Ly8hgd6Mh4RFlGTOjEYkFXPcIu9V6VcuT6EQAWQ4JPE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Apr 2025 05:54:56 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/participantes.eyr1z8lqjy.js">
+    <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/participantes.fe0a6rpi0t.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\participantes.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"eyr1z8lqjy"},{"Name":"integrity","Value":"sha256-xjax0hlauxk4emdt\u002BYhSLlC0\u002BPf69f4V68vmdAFoMdE="},{"Name":"label","Value":"_content/CursosUIMono/js/participantes.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5455"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022xjax0hlauxk4emdt\u002BYhSLlC0\u002BPf69f4V68vmdAFoMdE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 00:11:45 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fe0a6rpi0t"},{"Name":"integrity","Value":"sha256-eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw="},{"Name":"label","Value":"_content/CursosUIMono/js/participantes.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5523"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:18:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/participantes.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\participantes.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xjax0hlauxk4emdt\u002BYhSLlC0\u002BPf69f4V68vmdAFoMdE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5455"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022xjax0hlauxk4emdt\u002BYhSLlC0\u002BPf69f4V68vmdAFoMdE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 00:11:45 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5523"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 22:18:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CursosUIMono/js/profesores.01ualt1gd5.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\profesores.js'))</AssetFile>

@@ -6,10 +6,10 @@ $(document).ready(function () {
         },
         ajax: '/api/Participantes/data',
         columns: [
-            { data: 'nombre' },
-            { data: 'email' },
-            { data: 'telefono' },
-            { data: 'opciones' }
+            { data: 'nombre', searchable:true },
+            { data: 'email',searchable:false },
+            { data: 'telefono',searchable:false },
+            { data: 'opciones',searchable:false }
         ]
     });
     

@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using CursosUIMono.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using CursosUIMono.DTOs;
 
 namespace CursosUIMono.Controllers
 {

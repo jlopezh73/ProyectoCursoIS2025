@@ -1,3 +1,5 @@
+namespace CursosUIMono.DTOs;
+
 public class RespuestaPeticionDTO
 {
     public bool Exito { get; set; }

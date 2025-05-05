@@ -37,10 +37,12 @@ builder.Services.AddScoped<ProfesoresDAO>();
 builder.Services.AddScoped<ParticipantesDAO>();
 builder.Services.AddScoped<CursosImagenesDAO>();
 
+
 builder.Services.AddScoped<ICursosService, CursosService>();
 builder.Services.AddScoped<IProfesoresService, ProfesoresService>();
 builder.Services.AddScoped<IParticipantesService, ParticipantesService>();
 builder.Services.AddScoped<ICursosImagenesService, CursosImagenesMongoDBService>();
+builder.Services.AddScoped<IIdentidadService, IdentidadService>();
 
 var app = builder.Build();
 
