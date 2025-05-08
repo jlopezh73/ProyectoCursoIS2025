@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Http
 @{
-    var usuario_token = Context.Request.HttpContext.Session.GetString("token_usuario");
+    //var usuario_token = Context.Request.HttpContext.Session.GetString("token_usuario");
+    var usuario_token = "123";
 }
 @if (string.IsNullOrEmpty(usuario_token))
 {    
