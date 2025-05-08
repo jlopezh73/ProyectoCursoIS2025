@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CursosUIMono.DTOs;
 
-public class RespuestaValidacionUsuario
+public class RespuestaValidacionUsuarioDTO
 {
     public bool correcto {get; set;}
     public UsuarioDTO? usuario {get; set;}

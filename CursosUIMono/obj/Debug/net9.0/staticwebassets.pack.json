@@ -13,12 +13,28 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/imagenes_cursos/13.jpg",
+      "PackagePath": "staticwebassets/imagenes_cursos/13.jpg"
+    },
+    {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/imagenes_cursos/16.jpg",
       "PackagePath": "staticwebassets/imagenes_cursos/16.jpg"
     },
     {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/imagenes_cursos/9.jpg",
       "PackagePath": "staticwebassets/imagenes_cursos/9.jpg"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/images/uv.jpg",
+      "PackagePath": "staticwebassets/images/uv.jpg"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/images/uv.png",
+      "PackagePath": "staticwebassets/images/uv.png"
     },
     {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/cursos.js",

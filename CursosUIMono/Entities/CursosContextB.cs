@@ -4,16 +4,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CursosUIMono.Entities;
 
-public partial class CursosContext : DbContext
+public partial class CursosContextB : DbContext
 {
     private readonly IConfiguration _configuration;
     
-    public CursosContext(IConfiguration configuration)
+    public CursosContextB(IConfiguration configuration)
     {
         _configuration = configuration;    
     }
 
-    public CursosContext(DbContextOptions<CursosContext> options, IConfiguration configuration)
+    public CursosContextB(DbContextOptions<CursosContext> options, IConfiguration configuration)
         : base(options)
     {
         _configuration = configuration;    
@@ -32,12 +32,6 @@ public partial class CursosContext : DbContext
     public virtual DbSet<Participante> Participantes { get; set; }
 
     public virtual DbSet<Profesor> Profesors { get; set; }
-
-    public virtual DbSet<Usuario> Usuarios { get; set; }
-
-    public virtual DbSet<Usuario_Accion> Usuario_Accions { get; set; }
-
-    public virtual DbSet<Usuario_Sesion> Usuario_Sesions { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseMySQL(_configuration.GetConnectionString("CursosDB")??"");
@@ -85,6 +79,10 @@ public partial class CursosContext : DbContext
             entity.HasIndex(e => e.idCurso, "idCurso");
 
             entity.Property(e => e.archivo).HasMaxLength(100);
+
+            entity.Property(e => e.contenido)
+                .HasColumnType("longblob")
+                .HasColumnName("contenido");
 
             entity.HasOne(d => d.idCursoNavigation).WithMany(p => p.CursoImagens)
                 .HasForeignKey(d => d.idCurso)
@@ -159,62 +157,6 @@ public partial class CursosContext : DbContext
             entity.Property(e => e.especializacion).HasMaxLength(200);
             entity.Property(e => e.nombre).HasMaxLength(100);
             entity.Property(e => e.telefono).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<Usuario>(entity =>
-        {
-            entity.HasKey(e => e.ID).HasName("PRIMARY");
-
-            entity.ToTable("Usuario", "Cursos2025");
-
-            entity.Property(e => e.Activo).HasColumnType("bit(1)");
-            entity.Property(e => e.CorreoElectronico).HasMaxLength(100);
-            entity.Property(e => e.Materno).HasMaxLength(50);
-            entity.Property(e => e.Nombre).HasMaxLength(50);
-            entity.Property(e => e.Password).HasMaxLength(50);
-            entity.Property(e => e.Paterno).HasMaxLength(50);
-            entity.Property(e => e.Puesto).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<Usuario_Accion>(entity =>
-        {
-            entity.HasKey(e => e.ID).HasName("PRIMARY");
-
-            entity.ToTable("Usuario_Accion", "Cursos2025");
-
-            entity.HasIndex(e => e.IDUsuario, "fk_usuario_accion_usuario");
-
-            entity.HasIndex(e => e.IDUsuarioSesion, "fk_usuario_accion_usuario_sesion");
-
-            entity.Property(e => e.Accion).HasMaxLength(500);
-            entity.Property(e => e.FechaHora).HasColumnType("datetime");
-
-            entity.HasOne(d => d.IDUsuarioNavigation).WithMany(p => p.Usuario_Accions)
-                .HasForeignKey(d => d.IDUsuario)
-                .HasConstraintName("fk_usuario_accion_usuario");
-
-            entity.HasOne(d => d.IDUsuarioSesionNavigation).WithMany(p => p.Usuario_Accions)
-                .HasForeignKey(d => d.IDUsuarioSesion)
-                .HasConstraintName("fk_usuario_accion_usuario_sesion");
-        });
-
-        modelBuilder.Entity<Usuario_Sesion>(entity =>
-        {
-            entity.HasKey(e => e.ID).HasName("PRIMARY");
-
-            entity.ToTable("Usuario_Sesion", "Cursos2025");
-
-            entity.HasIndex(e => e.IDUsuario, "fk_UsuarioSesion_Usuario");
-
-            entity.Property(e => e.DireccionIP).HasMaxLength(20);
-            entity.Property(e => e.FechaInicio).HasColumnType("datetime");
-            entity.Property(e => e.FechaUltimoAcceso).HasColumnType("datetime");
-            entity.Property(e => e.Token).HasMaxLength(600);
-
-            entity.HasOne(d => d.IDUsuarioNavigation).WithMany(p => p.Usuario_Sesions)
-                .HasForeignKey(d => d.IDUsuario)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_UsuarioSesion_Usuario");
         });
 
         OnModelCreatingPartial(modelBuilder);

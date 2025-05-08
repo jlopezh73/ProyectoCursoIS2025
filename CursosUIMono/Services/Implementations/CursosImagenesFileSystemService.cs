@@ -20,7 +20,8 @@ namespace CursosUIMono.Services.Implementations
         public async Task<CursoImagenDTO> ObtenerCursoImagenPorIdAsync(int idCurso)
         {                        
             
-            var rutaArchivo = Path.Combine(_environment.WebRootPath, "imagenes_cursos", $"{idCurso}.jpg");
+            var rutaArchivo = Path.Combine(_environment.WebRootPath,
+             "imagenes_cursos", $"{idCurso}.jpg");
 
             if (!System.IO.File.Exists(rutaArchivo))            
                 return null;

@@ -222,5 +222,5 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/hnuiyci9tf-k2ymjg1vrz.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/igtjw9f53c-v8n06qnj1e.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/f1o1trpt4m-rwq29eauly.gz
-/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-humpb3jm0x.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz

@@ -119,6 +119,7 @@ function validarDatos() {
 }
 
 
+
 function eliminarCurso(id, nombre) {
     $("#formaEliminar #id").val(id);
     $("#nombreCursoEliminar").html(nombre);

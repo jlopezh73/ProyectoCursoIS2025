@@ -23,8 +23,8 @@ public class ProfesoresModel : PageModel
     }
 
     public async Task OnGet()
-    {
-        Profesores = await _profesoresService.ObtenerTodosLosProfesoresAsync();
+    {Profesores = await _profesoresService.ObtenerTodosLosProfesoresAsync();
+        
         if (Profesores == null)
         {
             Profesores = new List<ProfesorDTO>();

@@ -8,7 +8,7 @@ namespace CursosUIMono.Services.Interfaces
 {
     public interface IIdentidadService
     {        
-        public RespuestaValidacionUsuario 
-               ValidarUsuario(PeticionInicioSesion peticionInicioSesion);
+        public Task<RespuestaValidacionUsuarioDTO> 
+                    ValidarUsuario(PeticionInicioSesionDTO peticionInicioSesion, String ip);
     }
 }

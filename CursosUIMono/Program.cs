@@ -1,9 +1,11 @@
 using System.Globalization;
+using AppServiciosIdentidad.Gateways.Providers;
 using CursosUIMono.DAOs;
 using CursosUIMono.DTOs;
 using CursosUIMono.Entities;
 using CursosUIMono.Services.Implementations;
 using CursosUIMono.Services.Interfaces;
+using CursosUIMono.Services.Providers;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 
@@ -22,10 +24,21 @@ builder.Services.AddDbContext<CursosContext>(options => {
     options.UseMySQL(connectionString);
 }, ServiceLifetime.Scoped);
 
+builder.Services.AddSession(options =>
+{
+    options.Cookie.Name = ".CursosUIMono.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 builder.Services.AddScoped<CursoDTO>();
 builder.Services.AddScoped<ProfesorDTO>();
 builder.Services.AddScoped<ParticipanteDTO>();
 builder.Services.AddScoped<RespuestaPeticionDTO>();
+builder.Services.AddScoped<RespuestaValidacionUsuarioDTO>();
+builder.Services.AddScoped<PeticionInicioSesionDTO>();
+
 builder.Services.AddSingleton<IMongoClient>(sp =>
 {
     var connectionString = builder.Configuration.GetConnectionString("MongoDB");
@@ -36,13 +49,18 @@ builder.Services.AddScoped<CursosDAO>();
 builder.Services.AddScoped<ProfesoresDAO>();
 builder.Services.AddScoped<ParticipantesDAO>();
 builder.Services.AddScoped<CursosImagenesDAO>();
+builder.Services.AddScoped<UsuariosDAO>();
+builder.Services.AddScoped<UsuarioSesionesDAO>();
+builder.Services.AddScoped<UsuarioAccionesDAO>();
 
 
 builder.Services.AddScoped<ICursosService, CursosService>();
 builder.Services.AddScoped<IProfesoresService, ProfesoresService>();
 builder.Services.AddScoped<IParticipantesService, ParticipantesService>();
-builder.Services.AddScoped<ICursosImagenesService, CursosImagenesMongoDBService>();
+builder.Services.AddScoped<ICursosImagenesService, CursosImagenesFileSystemService>();
 builder.Services.AddScoped<IIdentidadService, IdentidadService>();
+builder.Services.AddScoped<ISesionesService, SesionesService>();
+builder.Services.AddScoped<IBitacoraService, BitacoraService>();
 
 var app = builder.Build();
 
@@ -63,6 +81,7 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
+app.UseSession();
 app.MapControllers();
 
 app.Run();

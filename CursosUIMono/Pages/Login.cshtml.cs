@@ -16,7 +16,7 @@ namespace CursosUIMono.Pages
         private readonly IIdentidadService _identidadService;
 
         [BindProperty]
-        public PeticionInicioSesion peticionInicioSesion {get; set;}
+        public PeticionInicioSesionDTO peticionInicioSesion {get; set;}
 
         public LoginModel(ILogger<LoginModel> logger,
                           IIdentidadService identidadService)
@@ -30,10 +30,11 @@ namespace CursosUIMono.Pages
             
         }
 
-        public void OnPost() {
-            if (peticionInicioSesion != null) {                
+        public async Task OnPost() {
+            if (peticionInicioSesion != null) {         
+                var ip = Request.HttpContext.Connection.RemoteIpAddress;       
                 var respuestaValidacion = 
-                       _identidadService.ValidarUsuario(peticionInicioSesion);
+                       await _identidadService.ValidarUsuario(peticionInicioSesion, ip.ToString());
                 if (respuestaValidacion.correcto) {
                     HttpContext.Session.SetString("correo_usuario", 
                                       respuestaValidacion.usuario.correoElectronico);
