@@ -2,43 +2,41 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-//using System.IdentityModel.Tokens.Jwt;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-//using Microsoft.IdentityModel.Tokens;
+using Microsoft.IdentityModel.Tokens;
 using CursosUIMono.DTOs;
 using CursosUIMono.Entities;
 using CursosUIMono.Services.Interfaces;
 
-namespace AppServiciosIdentidad.Gateways.Providers;
+namespace CursosUIMono.Services.Implementations;
 
-/*class GeneradorTokensJWT : IGeneradorTokens {    
-    private IConfiguration configuration;
-    private IServiciosLOGS serviciosLOGS;
-    public GeneradorTokensJWT(IConfiguration configuration, IServiciosLOGS serviciosLOGS) {        
-        this.configuration = configuration;
-        this.serviciosLOGS = serviciosLOGS;
+class GeneradorTokensJWTService : IGeneradorTokensService {        
+    private IBitacoraService _bitacoraService;
+    public GeneradorTokensJWTService(IConfiguration configuration, IBitacoraService _bitacoraService) {
+        
+        this._bitacoraService = _bitacoraService;
     }
     
-    public String GenerarToken(Usuario usuario, int noHoras, int idUsuarioSesion) {
+    public String GenerarToken(UsuarioDTO usuario, String key, int noHoras, int idUsuarioSesion) {
         
-        var tokenKey = Encoding.ASCII.GetBytes(configuration["JWTSettings:Key"]);
-        int duracion = Int32.Parse(configuration["JWTSettings:Duration"]);
-        var expiraToken = DateTime.Now.AddDays(duracion).AddHours(6);
+        var tokenKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));        
+        var expiraToken = DateTime.Now.AddHours(noHoras).AddHours(6);
         var identidad = new ClaimsIdentity(new List<Claim>{ 
-            new Claim(JwtRegisteredClaimNames.Email, usuario.CorreoElectronico),            
+            new Claim(JwtRegisteredClaimNames.Email, usuario.correoElectronico),            
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),            
             new Claim(ClaimTypes.DateOfBirth, DateTime.Now.ToString()),
-            new Claim(ClaimTypes.Role, usuario.Puesto),
-            new Claim("puesto", usuario.Puesto),
-            new Claim("scope", "CursosAPP"),
-            new Claim("idUsuario", usuario.Id.ToString()),
+            new Claim(ClaimTypes.Role, usuario.puesto),
+            new Claim("puesto", usuario.puesto),
+            new Claim("scope", "CursosUIMono"),
+            new Claim("idUsuario", usuario.ID.ToString()),
             new Claim("idUsuarioSesion", idUsuarioSesion.ToString()),
-            new Claim(JwtRegisteredClaimNames.Name, $"{usuario.Paterno}{usuario.Materno}{usuario.Nombre}"),          
-            new Claim(JwtRegisteredClaimNames.NameId, usuario.CorreoElectronico) 
+            new Claim(JwtRegisteredClaimNames.Name, usuario.nombreCompleto),          
+            new Claim(JwtRegisteredClaimNames.NameId, usuario.correoElectronico) 
             });
 
-        var credencialesFirma = new SigningCredentials(new SymmetricSecurityKey(tokenKey), 
+        var credencialesFirma = new SigningCredentials(tokenKey, 
                                     SecurityAlgorithms.HmacSha256Signature);
         var descriptorTokenSeguridad = new SecurityTokenDescriptor {
             Subject = identidad, 
@@ -52,13 +50,13 @@ namespace AppServiciosIdentidad.Gateways.Providers;
         var securityToken = jwtSecurityTokenHandler.CreateToken(descriptorTokenSeguridad);
         var token = jwtSecurityTokenHandler.WriteToken(securityToken);
 
-        serviciosLOGS.RegistrarAccion(
-             new AccionUsuarioDTO() {
-                IDUsuario = usuario.Id,            
+        _bitacoraService.RegistrarAccion(
+             new UsuarioAccionDTO() {
+                IDUsuario = usuario.ID,            
                 IDUsuarioSesion = idUsuarioSesion,     
                 Accion = "Generación de nuevo Token"
             });
         return token;
     }
     
-}*/
+}

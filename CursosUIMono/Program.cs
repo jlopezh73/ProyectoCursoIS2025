@@ -8,6 +8,9 @@ using CursosUIMono.Services.Interfaces;
 using CursosUIMono.Services.Providers;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +48,8 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
     return new MongoClient(connectionString);
 });
 
+
+
 builder.Services.AddScoped<CursosDAO>();
 builder.Services.AddScoped<ProfesoresDAO>();
 builder.Services.AddScoped<ParticipantesDAO>();
@@ -61,6 +66,28 @@ builder.Services.AddScoped<ICursosImagenesService, CursosImagenesFileSystemServi
 builder.Services.AddScoped<IIdentidadService, IdentidadService>();
 builder.Services.AddScoped<ISesionesService, SesionesService>();
 builder.Services.AddScoped<IBitacoraService, BitacoraService>();
+builder.Services.AddScoped<IGeneradorTokensService, GeneradorTokensJWTService>();
+
+builder.Services.AddAuthentication(options => {    
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;    
+}).AddJwtBearer(options => {
+    var config = builder.Configuration;
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    var llave = config["JWTSettings:Key"];
+    options.TokenValidationParameters = new TokenValidationParameters() {
+        ValidIssuer = config["JWTSettings:Issuer"],
+        ValidAudience = config["JWTSettings:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(llave)),        
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true
+    };
+});
+builder.Services.AddAuthorization();
+
 
 var app = builder.Build();
 
@@ -73,6 +100,10 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 
 app.UseRouting();
 

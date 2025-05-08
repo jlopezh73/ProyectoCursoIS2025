@@ -12,13 +12,23 @@ namespace CursosUIMono.Services.Providers;
 class SesionesService : ISesionesService {
     private UsuarioSesionesDAO _dao;
     private IBitacoraService _bitacoraService;
-    public SesionesService(UsuarioSesionesDAO dao, IBitacoraService bitacoraService) {
+    private IGeneradorTokensService _generadorTokensService;    
+    private int noHoras;
+    private String key;
+    public SesionesService(UsuarioSesionesDAO dao, 
+                           IConfiguration configuration,
+                           IBitacoraService bitacoraService, 
+                           IGeneradorTokensService _generadorTokensService) {
         this._dao = dao;
         this._bitacoraService = bitacoraService;
+        this._generadorTokensService = _generadorTokensService;
+        
+         noHoras = Int32.Parse(configuration["JWTSettings:Duration"]);
+         key = (String) configuration["JWTSettings:Key"];
     }
 
     public UsuarioSesionDTO? BuscarUltimaSesion(UsuarioDTO usuario) {        
-        var sesion =  _dao.BuscarUltimaSesion(usuario.ID);        
+        var sesion =  _dao.BuscarSesionActiva(usuario.ID, noHoras);        
         if (sesion != null) {
             return new UsuarioSesionDTO() {
                 ID = sesion.ID,
@@ -36,9 +46,11 @@ class SesionesService : ISesionesService {
     public UsuarioSesionDTO? GenerarSesion(UsuarioDTO usuario, 
                                string ip) {
         var sesion =  _dao.GenerarSesion(usuario.ID, ip);                        
-        sesion.Token = Guid.NewGuid().ToString();
+        //sesion.Token = Guid.NewGuid().ToString();
         
-        var sesionDAO = new UsuarioSesionDTO() {
+        sesion.Token = _generadorTokensService.GenerarToken(usuario,key, noHoras,sesion.ID);
+
+        var sesionDTO = new UsuarioSesionDTO() {
             ID = sesion.ID,
             IDUsuario = sesion.IDUsuario,            
             FechaInicio = sesion.FechaInicio,
@@ -47,8 +59,8 @@ class SesionesService : ISesionesService {
             Token = sesion.Token            
         };
         
-        AsignarTokenSesion(sesionDAO, sesion.Token);
-        return sesionDAO;
+        AsignarTokenSesion(sesionDTO, sesion.Token);
+        return sesionDTO;
     }
 
     private void AsignarTokenSesion(UsuarioSesionDTO sesion, string token) {

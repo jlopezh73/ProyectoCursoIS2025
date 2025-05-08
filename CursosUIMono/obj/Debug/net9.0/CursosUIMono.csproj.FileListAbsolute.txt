@@ -224,3 +224,11 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/f1o1trpt4m-rwq29eauly.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

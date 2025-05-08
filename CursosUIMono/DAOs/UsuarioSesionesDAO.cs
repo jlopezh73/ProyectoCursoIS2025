@@ -14,9 +14,10 @@ namespace CursosUIMono.DAOs
         }
         
 
-        public Usuario_Sesion? BuscarUltimaSesion(int idUsuario) {
+        public Usuario_Sesion? BuscarSesionActiva(int idUsuario, int horas) {
+            var hora = DateTime.Now.AddHours(-horas);
             var sesion = _context.Usuario_Sesions
-                    .Where(us => us.IDUsuario == idUsuario)
+                    .Where(us => us.IDUsuario == idUsuario && us.FechaInicio >= hora)
                     .OrderByDescending(us => us.FechaInicio)
                     .FirstOrDefault();  
             return sesion;        
