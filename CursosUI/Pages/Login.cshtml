@@ -1,0 +1,98 @@
+@page
+@model LoginModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Bienvenido al Sistema de Gestión de Cursos UV - Inicio de Sesión</title>    
+
+    
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+        html, body {
+            height: 100%;
+            background: rgb(0,148,56);
+            background: linear-gradient(110deg, rgba(0,148,56,1) 0%, rgba(10,83,159,1) 40%, rgba(103,103,103,1) 40%, rgba(232,232,232,1) 41%, rgba(255,255,255,1) 100%);
+        }
+
+        .form-signin {
+            margin: 20%;
+            max-width: 430px;
+            padding: 1rem;
+        }
+
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+            
+    </style>        
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">      
+    <div class="container w-100">
+        <div class="row mb-2">
+            <h1 class="text-white text-center">Sistema Institucional para el Registro de Cursos de Educación Contínua</h1>  
+        </div>
+        <div class="row">
+            <img class="mb-4" src="/images/logo.png" alt=""  >
+        </div>
+    </div>
+        
+    <main class="form-signin w-100">
+        <form method="post">
+            <img class="mb-4" src="/images/uv.png" alt="" width="230" style="margin-left:100px">
+            <h1 class="h3 mb-3 fw-normal text-center">Bienvenido. Para poder continuar favor de iniciar sesión</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" 
+                         asp-for="@Model.peticionInicioSesion.correoElectronico" 
+                         placeholder="Correo electrónico">
+                <label for="correoElectronico">Correo electrónico</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" 
+                      asp-for="@Model.peticionInicioSesion.password" 
+                      placeholder="Contraseña">
+                <label for="password">Contraseña</label>
+            </div>
+
+            <div class="form-check text-start my-3"></div>
+                <input class="form-check-input" type="checkbox" 
+                   value="recordarme" 
+                   >
+                <label class="form-check-label" for="recordarme">
+                    Recordarme
+                </label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">Iniciar Sesión</button>
+            <p class="mt-5 mb-3 text-body-secondary">Universidad Veracruzana - Facultad de Estadística e Informática &copy; 2024</p>
+        </form>
+    </main>
+    
+
+  </body>
+</html>

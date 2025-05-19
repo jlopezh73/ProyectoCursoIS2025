@@ -1,0 +1,19 @@
+@model CursosUI.DTOs.ParticipanteDTO
+<div class="">
+    <input type="hidden" asp-for="id" />
+    <div class="form-floating mb-3">        
+        <input type="text" class="form-control" id="nombre" asp-for="nombre" placeholder="">
+        <label asp-for="nombre"></label>
+        <span class="text-danger" asp-validation-for="nombre"></span>
+    </div>
+    <div class="form-floating mb-3">        
+        <input type="email" class="form-control" id="email" asp-for="email" placeholder="">
+        <label asp-for="email"></label>
+        <span class="text-danger" asp-validation-for="email"></span>
+    </div>
+    <div class="form-floating mb-3">        
+        <input type="text" class="form-control" id="telefono" asp-for="telefono" placeholder="">
+        <label asp-for="telefono"></label>
+        <span class="text-danger" asp-validation-for="telefono"></span>
+    </div>    
+</div>

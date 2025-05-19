@@ -211,7 +211,6 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/CursosUIMono.pdb
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/CursosUIMono.genruntimeconfig.cache
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/ref/CursosUIMono.dll
-/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-01ualt1gd5.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/DnsClient.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/MongoDB.Bson.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/MongoDB.Driver.dll
@@ -222,8 +221,6 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/hnuiyci9tf-k2ymjg1vrz.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/igtjw9f53c-v8n06qnj1e.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/f1o1trpt4m-rwq29eauly.gz
-/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz
-/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
@@ -232,3 +229,6 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-as9ovx8xbd.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-8pc31uvzsh.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-pb28te8m38.gz

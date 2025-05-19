@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Http
 @{
-    //var usuario_token = Context.Request.HttpContext.Session.GetString("token_usuario");
-    var usuario_token = "123";
+    var usuario_token = Context.Request.HttpContext.Session.GetString("token_usuario");
+    //var usuario_token = "123";
 }
 @if (string.IsNullOrEmpty(usuario_token))
 {    
@@ -74,6 +74,9 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="/lib/dataTables/datatables.min.js"></script>
+        <script>
+            var token_usuario = '@usuario_token';
+        </script>
 
         @await RenderSectionAsync("Scripts", required: false)
         @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }

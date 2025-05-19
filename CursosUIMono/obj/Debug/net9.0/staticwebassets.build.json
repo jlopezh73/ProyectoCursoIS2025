@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zN+w5mOgwRj14R12KTE6fcsJ6xMwpwnwRzNmj3tAKE4=",
+  "Hash": "OGlbOoSjVx69aUEDnCJwrHwVvyjxkBeodOPNKNT0ssA=",
   "Source": "CursosUIMono",
   "BasePath": "_content/CursosUIMono",
   "Mode": "Default",
@@ -332,12 +332,12 @@
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz",
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-as9ovx8xbd.gz",
       "SourceId": "CursosUIMono",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CursosUIMono",
-      "RelativePath": "js/cursos#[.{fingerprint=2p0hfkqi7j}]?.js.gz",
+      "RelativePath": "js/cursos#[.{fingerprint=as9ovx8xbd}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -346,8 +346,8 @@
       "RelatedAsset": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/cursos.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kfxiufuvxo",
-      "Integrity": "QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A=",
+      "Fingerprint": "rhhhqm2xc4",
+      "Integrity": "MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/cursos.js"
@@ -479,12 +479,12 @@
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz",
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-8pc31uvzsh.gz",
       "SourceId": "CursosUIMono",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CursosUIMono",
-      "RelativePath": "js/participantes#[.{fingerprint=fe0a6rpi0t}]?.js.gz",
+      "RelativePath": "js/participantes#[.{fingerprint=8pc31uvzsh}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -493,8 +493,8 @@
       "RelatedAsset": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/participantes.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "nx31fetp5w",
-      "Integrity": "K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As=",
+      "Fingerprint": "13xytvwrmt",
+      "Integrity": "/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/participantes.js"
@@ -1256,12 +1256,12 @@
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-01ualt1gd5.gz",
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-pb28te8m38.gz",
       "SourceId": "CursosUIMono",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/CursosUIMono",
-      "RelativePath": "js/profesores#[.{fingerprint=01ualt1gd5}]?.js.gz",
+      "RelativePath": "js/profesores#[.{fingerprint=pb28te8m38}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1270,8 +1270,8 @@
       "RelatedAsset": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/profesores.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6saxyjulo1",
-      "Integrity": "1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0=",
+      "Fingerprint": "ljega1zqqu",
+      "Integrity": "oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/profesores.js"
@@ -1732,8 +1732,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2p0hfkqi7j",
-      "Integrity": "OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A=",
+      "Fingerprint": "as9ovx8xbd",
+      "Integrity": "dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/cursos.js"
@@ -1753,8 +1753,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fe0a6rpi0t",
-      "Integrity": "eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=",
+      "Fingerprint": "8pc31uvzsh",
+      "Integrity": "DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/participantes.js"
@@ -1774,8 +1774,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "01ualt1gd5",
-      "Integrity": "hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k=",
+      "Fingerprint": "pb28te8m38",
+      "Integrity": "xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/profesores.js"
@@ -4832,13 +4832,13 @@
       ]
     },
     {
-      "Route": "js/cursos.2p0hfkqi7j.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz",
+      "Route": "js/cursos.as9ovx8xbd.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-as9ovx8xbd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000722021661"
+          "Quality": "0.000698812020"
         }
       ],
       "ResponseHeaders": [
@@ -4848,15 +4848,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1430"
         },
         {
           "Name": "ETag",
-          "Value": "\"QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A=\""
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 05:19:29 GMT"
+          "Value": "Fri, 16 May 2025 06:10:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4876,13 +4876,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A=\""
+          "Value": "W/\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2p0hfkqi7j"
+          "Value": "as9ovx8xbd"
         },
         {
           "Name": "label",
@@ -4890,12 +4890,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A="
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
         }
       ]
     },
     {
-      "Route": "js/cursos.2p0hfkqi7j.js",
+      "Route": "js/cursos.as9ovx8xbd.js",
       "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/cursos.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4905,7 +4905,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6161"
+          "Value": "6475"
         },
         {
           "Name": "Content-Type",
@@ -4913,11 +4913,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A=\""
+          "Value": "\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 05:19:29 GMT"
+          "Value": "Fri, 16 May 2025 06:10:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4927,7 +4927,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2p0hfkqi7j"
+          "Value": "as9ovx8xbd"
         },
         {
           "Name": "label",
@@ -4935,13 +4935,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A="
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
         }
       ]
     },
     {
-      "Route": "js/cursos.2p0hfkqi7j.js.gz",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz",
+      "Route": "js/cursos.as9ovx8xbd.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-as9ovx8xbd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4950,7 +4950,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1430"
         },
         {
           "Name": "Content-Type",
@@ -4958,11 +4958,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A=\""
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 05:19:29 GMT"
+          "Value": "Fri, 16 May 2025 06:10:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4980,7 +4980,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2p0hfkqi7j"
+          "Value": "as9ovx8xbd"
         },
         {
           "Name": "label",
@@ -4988,18 +4988,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A="
+          "Value": "sha256-MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk="
         }
       ]
     },
     {
       "Route": "js/cursos.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-as9ovx8xbd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000722021661"
+          "Quality": "0.000698812020"
         }
       ],
       "ResponseHeaders": [
@@ -5009,15 +5009,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1430"
         },
         {
           "Name": "ETag",
-          "Value": "\"QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A=\""
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 05:19:29 GMT"
+          "Value": "Fri, 16 May 2025 06:10:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5037,13 +5037,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A=\""
+          "Value": "W/\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A="
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
         }
       ]
     },
@@ -5058,7 +5058,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6161"
+          "Value": "6475"
         },
         {
           "Name": "Content-Type",
@@ -5066,11 +5066,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A=\""
+          "Value": "\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 05:19:29 GMT"
+          "Value": "Fri, 16 May 2025 06:10:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5080,13 +5080,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A="
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
         }
       ]
     },
     {
       "Route": "js/cursos.js.gz",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-2p0hfkqi7j.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/8xr8jkegpi-as9ovx8xbd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5095,7 +5095,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1384"
+          "Value": "1430"
         },
         {
           "Name": "Content-Type",
@@ -5103,11 +5103,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A=\""
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 05:19:29 GMT"
+          "Value": "Fri, 16 May 2025 06:10:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5125,18 +5125,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QGxz3kQyYknX01bpoBTi7w2T7It8l+Zu+rL1ZD8D+/A="
+          "Value": "sha256-MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk="
         }
       ]
     },
     {
-      "Route": "js/participantes.fe0a6rpi0t.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz",
+      "Route": "js/participantes.8pc31uvzsh.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-8pc31uvzsh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000886524823"
+          "Quality": "0.000818330606"
         }
       ],
       "ResponseHeaders": [
@@ -5146,15 +5146,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1127"
+          "Value": "1221"
         },
         {
           "Name": "ETag",
-          "Value": "\"K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As=\""
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 22:18:05 GMT"
+          "Value": "Fri, 16 May 2025 06:17:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5174,13 +5174,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=\""
+          "Value": "W/\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fe0a6rpi0t"
+          "Value": "8pc31uvzsh"
         },
         {
           "Name": "label",
@@ -5188,12 +5188,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw="
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
         }
       ]
     },
     {
-      "Route": "js/participantes.fe0a6rpi0t.js",
+      "Route": "js/participantes.8pc31uvzsh.js",
       "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/participantes.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5203,7 +5203,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5523"
+          "Value": "5967"
         },
         {
           "Name": "Content-Type",
@@ -5211,11 +5211,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=\""
+          "Value": "\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 22:18:05 GMT"
+          "Value": "Fri, 16 May 2025 06:17:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5225,7 +5225,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fe0a6rpi0t"
+          "Value": "8pc31uvzsh"
         },
         {
           "Name": "label",
@@ -5233,13 +5233,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw="
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
         }
       ]
     },
     {
-      "Route": "js/participantes.fe0a6rpi0t.js.gz",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz",
+      "Route": "js/participantes.8pc31uvzsh.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-8pc31uvzsh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5248,7 +5248,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1127"
+          "Value": "1221"
         },
         {
           "Name": "Content-Type",
@@ -5256,11 +5256,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As=\""
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 22:18:05 GMT"
+          "Value": "Fri, 16 May 2025 06:17:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5278,7 +5278,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fe0a6rpi0t"
+          "Value": "8pc31uvzsh"
         },
         {
           "Name": "label",
@@ -5286,18 +5286,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As="
+          "Value": "sha256-/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg="
         }
       ]
     },
     {
       "Route": "js/participantes.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-8pc31uvzsh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000886524823"
+          "Quality": "0.000818330606"
         }
       ],
       "ResponseHeaders": [
@@ -5307,15 +5307,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1127"
+          "Value": "1221"
         },
         {
           "Name": "ETag",
-          "Value": "\"K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As=\""
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 22:18:05 GMT"
+          "Value": "Fri, 16 May 2025 06:17:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5335,13 +5335,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=\""
+          "Value": "W/\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw="
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
         }
       ]
     },
@@ -5356,7 +5356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5523"
+          "Value": "5967"
         },
         {
           "Name": "Content-Type",
@@ -5364,11 +5364,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=\""
+          "Value": "\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 22:18:05 GMT"
+          "Value": "Fri, 16 May 2025 06:17:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5378,13 +5378,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw="
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
         }
       ]
     },
     {
       "Route": "js/participantes.js.gz",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-fe0a6rpi0t.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ahh5q0cwsz-8pc31uvzsh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5393,7 +5393,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1127"
+          "Value": "1221"
         },
         {
           "Name": "Content-Type",
@@ -5401,11 +5401,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As=\""
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 22:18:05 GMT"
+          "Value": "Fri, 16 May 2025 06:17:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5423,18 +5423,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K0E03faX7GJdM1fAua8TT3ju9rthqTT5Utac+8hn4As="
+          "Value": "sha256-/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg="
         }
       ]
     },
     {
-      "Route": "js/profesores.01ualt1gd5.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-01ualt1gd5.gz",
+      "Route": "js/profesores.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-pb28te8m38.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001089324619"
+          "Quality": "0.001036269430"
         }
       ],
       "ResponseHeaders": [
@@ -5444,19 +5444,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "917"
+          "Value": "964"
         },
         {
           "Name": "ETag",
-          "Value": "\"1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0=\""
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 07:15:59 GMT"
+          "Value": "Fri, 16 May 2025 06:09:33 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5472,26 +5472,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k=\""
+          "Value": "W/\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "01ualt1gd5"
-        },
-        {
-          "Name": "label",
-          "Value": "js/profesores.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k="
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
         }
       ]
     },
     {
-      "Route": "js/profesores.01ualt1gd5.js",
+      "Route": "js/profesores.js",
       "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/profesores.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5501,7 +5493,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4680"
+          "Value": "4936"
         },
         {
           "Name": "Content-Type",
@@ -5509,11 +5501,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k=\""
+          "Value": "\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 07:15:59 GMT"
+          "Value": "Fri, 16 May 2025 06:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-pb28te8m38.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 06:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.pb28te8m38.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-pb28te8m38.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001036269430"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 06:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pb28te8m38"
+        },
+        {
+          "Name": "label",
+          "Value": "js/profesores.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.pb28te8m38.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/profesores.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 06:09:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5523,7 +5660,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "01ualt1gd5"
+          "Value": "pb28te8m38"
         },
         {
           "Name": "label",
@@ -5531,13 +5668,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k="
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
         }
       ]
     },
     {
-      "Route": "js/profesores.01ualt1gd5.js.gz",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-01ualt1gd5.gz",
+      "Route": "js/profesores.pb28te8m38.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-pb28te8m38.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5546,7 +5683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "917"
+          "Value": "964"
         },
         {
           "Name": "Content-Type",
@@ -5554,11 +5691,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0=\""
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 07:15:59 GMT"
+          "Value": "Fri, 16 May 2025 06:09:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5576,7 +5713,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "01ualt1gd5"
+          "Value": "pb28te8m38"
         },
         {
           "Name": "label",
@@ -5584,144 +5721,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0="
-        }
-      ]
-    },
-    {
-      "Route": "js/profesores.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-01ualt1gd5.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001089324619"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "917"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 07:15:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k="
-        }
-      ]
-    },
-    {
-      "Route": "js/profesores.js",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/wwwroot/js/profesores.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4680"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 07:15:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k="
-        }
-      ]
-    },
-    {
-      "Route": "js/profesores.js.gz",
-      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUIMono/obj/Debug/net9.0/compressed/ul1myqyrvq-01ualt1gd5.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "917"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 07:15:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1mJEVokHVHZk6YavJFU51ZyVHDbDsImmvDSaw9CfaS0="
+          "Value": "sha256-oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U="
         }
       ]
     },

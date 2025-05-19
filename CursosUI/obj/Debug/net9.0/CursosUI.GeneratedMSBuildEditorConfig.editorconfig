@@ -28,12 +28,36 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Cursos/CursoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3Vyc29zL0N1cnNvUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Cursos/Cursos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3Vyc29zL0N1cnNvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Participantes/ParticipantePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGljaXBhbnRlcy9QYXJ0aWNpcGFudGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Participantes/Participantes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGljaXBhbnRlcy9QYXJ0aWNpcGFudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Profesores/Profesores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy9Qcm9mZXNvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Profesores/ProfesorPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy9Qcm9mZXNvclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/Pages/Shared/_ValidationScriptsPartial.cshtml]

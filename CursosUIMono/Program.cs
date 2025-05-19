@@ -80,7 +80,7 @@ builder.Services.AddAuthentication(options => {
         ValidIssuer = config["JWTSettings:Issuer"],
         ValidAudience = config["JWTSettings:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(llave)),        
-        ValidateIssuer = false,
+        ValidateIssuer = true,
         ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true
@@ -107,7 +107,8 @@ app.UseAuthorization();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); 
+app.UseAuthorization();  
 
 app.MapStaticAssets();
 app.MapRazorPages()

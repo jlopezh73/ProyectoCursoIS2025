@@ -2,9 +2,13 @@ var tablaParticipantes;
 $(document).ready(function () {
     tablaParticipantes = new DataTable("#tablaParticipantes", {
         language: {
-            url: '//cdn.datatables.net/plug-ins/2.2.2/i18n/es-ES.json',            
+            url: '//cdn.datatables.net/plug-ins/2.2.2/i18n/es-ES.json',                        
         },
-        ajax: '/api/Participantes/data',
+        ajax: {
+            url: '/api/Participantes/data',
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer '+token_usuario);             
+            }},        
         columns: [
             { data: 'nombre', searchable:true },
             { data: 'email',searchable:false },
@@ -34,6 +38,7 @@ function editarParticipante(id) {
         type: "GET",
         url: "/api/Participantes/"+id,
         dataType: "json",
+        headers: {"Authorization": "Bearer "+token_usuario },
         contentType: "application/json",        
         success: function (respuesta) {
             if (respuesta.exito) {
@@ -75,6 +80,7 @@ function guardarDatosAgregarParticipante() {
             type: "POST",
             url: "/api/Participantes",
             dataType: "json",
+            headers: {"Authorization": "Bearer "+token_usuario },
             contentType: "application/json",
             data: JSON.stringify(forma),
             success: function (respuesta) {
@@ -117,6 +123,7 @@ function guardarDatosEditarParticipante() {
             type: "PUT",
             url: "/api/Participantes/"+forma.id,
             dataType: "json",
+            headers: {"Authorization": "Bearer "+token_usuario },
             contentType: "application/json",
             data: JSON.stringify(forma),
             success: function (respuesta) {
@@ -159,6 +166,7 @@ function guardarDatosEliminarParticipante() {
         type: "DELETE",
         url: "/api/Participantes/"+id,
         dataType: "json",
+        headers: {"Authorization": "Bearer "+token_usuario },
         contentType: "application/json",        
         success: function (respuesta) {
             if (respuesta.exito) {

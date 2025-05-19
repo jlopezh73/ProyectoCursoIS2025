@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using CursosUIMono.DTOs;
 using CursosUIMono.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CursosUIMono.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ParticipantesController : ControllerBase
     {
         private readonly IParticipantesService _participantesService;

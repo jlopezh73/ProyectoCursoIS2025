@@ -37,11 +37,11 @@ namespace CursosUIMono.Pages
                        await _identidadService.ValidarUsuario(peticionInicioSesion, ip.ToString());
                 if (respuestaValidacion.correcto) {
                     HttpContext.Session.SetString("correo_usuario", 
-                                      respuestaValidacion.usuario.correoElectronico);
+                                      respuestaValidacion.usuario.CorreoElectronico);
                     HttpContext.Session.SetString("nombre_usuario", 
                                       respuestaValidacion.usuario.nombreCompleto);
                     HttpContext.Session.SetString("puesto_usuario", 
-                                      respuestaValidacion.usuario.puesto);
+                                      respuestaValidacion.usuario.Puesto);
                     HttpContext.Session.SetString("token_usuario", 
                                       respuestaValidacion.token);
                     Response.Redirect("/");

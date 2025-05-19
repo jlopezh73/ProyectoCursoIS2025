@@ -588,6 +588,54 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"81b7ukuj9c"},{"Name":"integrity","Value":"sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ\u002BVSYilIiEQu8ilnvqk="},{"Name":"label","Value":"_content/CursosUI/lib/bootstrap/LICENSE"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1153"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022ZH6pA6BSx6fuHZvdaKph1DwUJ\u002BVSYilIiEQu8ilnvqk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 21:54:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.5mx72iilsw.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5mx72iilsw"},{"Name":"integrity","Value":"sha256-EzDxj/zqYM/KM/LPZD2FchKJwGDsiT3y7kWmQxgbn60="},{"Name":"label","Value":"_content/CursosUI/lib/dataTables/datatables.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54123"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EzDxj/zqYM/KM/LPZD2FchKJwGDsiT3y7kWmQxgbn60=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EzDxj/zqYM/KM/LPZD2FchKJwGDsiT3y7kWmQxgbn60="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54123"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EzDxj/zqYM/KM/LPZD2FchKJwGDsiT3y7kWmQxgbn60=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BKduDxFt6hf6m6XOVAJIDHVP7NgephEzMiR\u002Bz2Fv\u002BQA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4958047"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BKduDxFt6hf6m6XOVAJIDHVP7NgephEzMiR\u002Bz2Fv\u002BQA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.k2ymjg1vrz.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k2ymjg1vrz"},{"Name":"integrity","Value":"sha256-BKduDxFt6hf6m6XOVAJIDHVP7NgephEzMiR\u002Bz2Fv\u002BQA="},{"Name":"label","Value":"_content/CursosUI/lib/dataTables/datatables.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4958047"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BKduDxFt6hf6m6XOVAJIDHVP7NgephEzMiR\u002Bz2Fv\u002BQA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rxMx4qnz4ZsDlcCQM5W/yVuGdLwuNtNQOLrRAwy55po="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"48730"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rxMx4qnz4ZsDlcCQM5W/yVuGdLwuNtNQOLrRAwy55po=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RUrzRumjbI7AEIwym3ZOi4VfKEoN0BDfho8FicTLaDc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2579588"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RUrzRumjbI7AEIwym3ZOi4VfKEoN0BDfho8FicTLaDc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.min.rwq29eauly.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rwq29eauly"},{"Name":"integrity","Value":"sha256-RUrzRumjbI7AEIwym3ZOi4VfKEoN0BDfho8FicTLaDc="},{"Name":"label","Value":"_content/CursosUI/lib/dataTables/datatables.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2579588"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RUrzRumjbI7AEIwym3ZOi4VfKEoN0BDfho8FicTLaDc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CursosUI/lib/dataTables/datatables.min.v8n06qnj1e.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\dataTables\datatables.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v8n06qnj1e"},{"Name":"integrity","Value":"sha256-rxMx4qnz4ZsDlcCQM5W/yVuGdLwuNtNQOLrRAwy55po="},{"Name":"label","Value":"_content/CursosUI/lib/dataTables/datatables.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48730"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rxMx4qnz4ZsDlcCQM5W/yVuGdLwuNtNQOLrRAwy55po=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 13:11:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CursosUI/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -16,6 +16,7 @@ function editarProfesor(id) {
     $.ajax({
         type: "GET",
         url: "/api/Profesores/"+id,
+        headers: {"Authorization": "Bearer "+token_usuario },
         dataType: "json",
         contentType: "application/json",        
         success: function (respuesta) {
@@ -57,6 +58,7 @@ function guardarDatosAgregarProfesor() {
         $.ajax({
             type: "POST",
             url: "/api/Profesores",
+            headers: {"Authorization": "Bearer "+token_usuario },
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(forma),
@@ -98,6 +100,7 @@ function guardarDatosEditarProfesor() {
         $.ajax({
             type: "PUT",
             url: "/api/Profesores/"+forma.id,
+            headers: {"Authorization": "Bearer "+token_usuario },
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(forma),
@@ -139,6 +142,7 @@ function guardarDatosEliminarProfesor() {
     $.ajax({
         type: "DELETE",
         url: "/api/Profesores/"+id,
+        headers: {"Authorization": "Bearer "+token_usuario },
         dataType: "json",
         contentType: "application/json",        
         success: function (respuesta) {

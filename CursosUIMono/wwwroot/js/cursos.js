@@ -31,6 +31,7 @@ function editarCurso(id) {
         type: "GET",
         url: "/api/Cursos/"+id,
         dataType: "json",
+        headers: {"Authorization": "Bearer "+token_usuario },
         contentType: "application/json",        
         success: function (respuesta) {
             if (respuesta.exito) {
@@ -90,6 +91,7 @@ function guardarDatosCurso() {
             type: verbo,
             url: url,
             dataType: "json",
+            headers: {"Authorization": "Bearer "+token_usuario },
             contentType: "application/json",
             data: JSON.stringify(forma),
             success: function (respuesta) {
@@ -133,6 +135,7 @@ function guardarDatosEliminarCurso() {
         type: "DELETE",
         url: "/api/Cursos/"+id,
         dataType: "json",
+        headers: {"Authorization": "Bearer "+token_usuario },
         contentType: "application/json",        
         success: function (respuesta) {
             if (respuesta.exito) {
@@ -153,6 +156,7 @@ function asignarCursoImagen(idCurso) {
     $.ajax({
         type: "GET",
         url: "/api/CursoImagen/Existe/"+idCurso,
+        headers: {"Authorization": "Bearer "+token_usuario },
         processData: false, 
         contentType: false,    
         success: function (respuesta) {
@@ -188,6 +192,7 @@ function guardarImagenCurso() {
     $.ajax({
         type: "POST",
         url: "/api/CursoImagen/"+idCurso,
+        headers: {"Authorization": "Bearer "+token_usuario },
         processData: false, 
         contentType: false,
         data: formData,

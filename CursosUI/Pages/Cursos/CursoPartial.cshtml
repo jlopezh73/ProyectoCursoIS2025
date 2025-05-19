@@ -1,0 +1,52 @@
+@model CursosUI.Pages.Cursos.CursoPartialModel
+@{
+    var Curso = Model.Curso;
+    var Profesores = Model.Profesores;
+}
+<div class="">
+    <input type="hidden" asp-for="Curso.id" id="id" />
+    <div class="mb-3">        
+        <label asp-for="Curso.nombre"></label>
+        <input type="text" class="form-control" id="nombre" asp-for="Curso.nombre" >
+        <span class="text-danger" asp-validation-for="Curso.nombre"></span>
+    </div>    
+    <div class="row">
+        <div class="col-6 mb-3">                
+            <label asp-for="Curso.profesor"></label>
+            <select asp-for="Curso.profesor" class="form-select" id="profesor">
+                <option value="">Seleccione un profesor</option>
+                @foreach (var profesor in Model.Profesores)
+                {
+                    <option value="@profesor.id">@profesor.nombre</option>
+                }       
+            </select>            
+            <span class="text-danger" asp-validation-for="Curso.profesor"></span>
+        </div>
+        <div class="col-6 mb-3">                
+            <label asp-for="Curso.precio"></label>
+            <input type="number" class="form-control" id="precio" asp-for="Curso.precio">
+            <span class="text-danger" asp-validation-for="Curso.precio"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">                
+                <label asp-for="Curso.fechaInicio"></label>
+                <input type="date" class="form-control" id="fechaInicio" asp-for="Curso.fechaInicio" >
+                <span class="text-danger" asp-validation-for="Curso.fechaInicio"></span>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class=" mb-3">                
+                <label asp-for="Curso.fechaTermino"></label>
+                <input type="date" class="form-control" id="fechaTermino" asp-for="Curso.fechaTermino" >
+                <span class="text-danger" asp-validation-for="Curso.fechaTermino"></span>
+            </div>
+        </div>    
+    </div>
+    <div class="mb-3">                
+        <label asp-for="Curso.descripcion"></label>
+        <textarea class="form-control form-control-sm" id="descripcion" asp-for="Curso.descripcion" rows="5"></textarea>        
+        <span class="text-danger" asp-validation-for="Curso.descripcion"></span>
+    </div>
+</div>

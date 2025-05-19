@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2p0hfkqi7j</Fingerprint>
-      <Integrity>OoOj5kV3KL+KvwyKmBgR+dddjZ27aj1s/UBeavGWu6A=</Integrity>
+      <Fingerprint>as9ovx8xbd</Fingerprint>
+      <Integrity>dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cursos.js'))</OriginalItemSpec>
@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fe0a6rpi0t</Fingerprint>
-      <Integrity>eb2CjRje99mQZJNbqjV7uu6xdquOXY1R9jsCGpc6rXw=</Integrity>
+      <Fingerprint>8pc31uvzsh</Fingerprint>
+      <Integrity>DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\participantes.js'))</OriginalItemSpec>
@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>01ualt1gd5</Fingerprint>
-      <Integrity>hI9Kdf31ytIHo06H6Cbyo5OJLROogIvdM9fLS/hPM3k=</Integrity>
+      <Fingerprint>pb28te8m38</Fingerprint>
+      <Integrity>xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\profesores.js'))</OriginalItemSpec>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PRjQi8E/Iyc=",
+  "success": true,
+  "projectFilePath": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/ServiciosIdentidad/ServiciosIdentidad.csproj",
+  "expectedPackageFiles": [
+    "/Users/jlopezh73/.nuget/packages/microsoft.aspnetcore.openapi/9.0.3/microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "/Users/jlopezh73/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

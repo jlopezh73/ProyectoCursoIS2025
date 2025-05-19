@@ -14,26 +14,28 @@ namespace CursosUIMono.Services.Implementations;
 
 class GeneradorTokensJWTService : IGeneradorTokensService {        
     private IBitacoraService _bitacoraService;
+    private readonly IConfiguration _configuration;
     public GeneradorTokensJWTService(IConfiguration configuration, IBitacoraService _bitacoraService) {
         
         this._bitacoraService = _bitacoraService;
+        _configuration = configuration;
     }
     
     public String GenerarToken(UsuarioDTO usuario, String key, int noHoras, int idUsuarioSesion) {
-        
+        var issuer = _configuration["JWTSettings:Issuer"];
+        var audience = _configuration["JWTSettings:Audience"];
         var tokenKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));        
         var expiraToken = DateTime.Now.AddHours(noHoras).AddHours(6);
         var identidad = new ClaimsIdentity(new List<Claim>{ 
-            new Claim(JwtRegisteredClaimNames.Email, usuario.correoElectronico),            
+            new Claim(JwtRegisteredClaimNames.Iss, issuer),            
+            new Claim(JwtRegisteredClaimNames.Email, usuario.CorreoElectronico),            
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),            
             new Claim(ClaimTypes.DateOfBirth, DateTime.Now.ToString()),
-            new Claim(ClaimTypes.Role, usuario.puesto),
-            new Claim("puesto", usuario.puesto),
-            new Claim("scope", "CursosUIMono"),
+            new Claim(ClaimTypes.Role, usuario.Puesto),
+            new Claim("puesto", usuario.Puesto),            
             new Claim("idUsuario", usuario.ID.ToString()),
             new Claim("idUsuarioSesion", idUsuarioSesion.ToString()),
-            new Claim(JwtRegisteredClaimNames.Name, usuario.nombreCompleto),          
-            new Claim(JwtRegisteredClaimNames.NameId, usuario.correoElectronico) 
+            new Claim(JwtRegisteredClaimNames.Name, usuario.nombreCompleto),                  
             });
 
         var credencialesFirma = new SigningCredentials(tokenKey, 
@@ -53,6 +55,7 @@ class GeneradorTokensJWTService : IGeneradorTokensService {
         _bitacoraService.RegistrarAccion(
              new UsuarioAccionDTO() {
                 IDUsuario = usuario.ID,            
+                FechaHora = DateTime.Now,
                 IDUsuarioSesion = idUsuarioSesion,     
                 Accion = "Generación de nuevo Token"
             });

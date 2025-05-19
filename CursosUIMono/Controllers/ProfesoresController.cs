@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using CursosUIMono.DTOs;
 using CursosUIMono.Services.Interfaces;
+using System.Security.Claims;
 
 namespace CursosUIMono.Controllers
 {
-    [ApiController]
+    [ApiController]    
     [Route("api/[controller]")]
+    [Authorize]
     public class ProfesoresController : ControllerBase
     {
         private readonly IProfesoresService _profesoresService;
@@ -34,6 +37,7 @@ namespace CursosUIMono.Controllers
 
         // GET: api/Profesores/{id}
         [HttpGet("{id}")]
+        [Authorize(Roles = "Administrador General")]
         public async Task<IActionResult> ObtenerPorId(int id)
         {
             var profesor = await _profesoresService.ObtenerProfesorPorIdAsync(id);
@@ -100,6 +104,17 @@ namespace CursosUIMono.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Eliminar(int id)
         {
+            var claims = HttpContext.User.Claims;
+
+            // Obtener un claim específico (por ejemplo, rol del usuario)
+            var rolUsuario = claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            // Verificar si el usuario tiene el rol necesario
+            if (rolUsuario != "Administrador")
+            {
+                return Forbid("Bearer");
+            }
+
             var profesor = await _profesoresService.ObtenerProfesorPorIdAsync(id);
             if (profesor == null)
             {

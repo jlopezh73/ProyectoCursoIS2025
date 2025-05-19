@@ -46,8 +46,7 @@ class SesionesService : ISesionesService {
     public UsuarioSesionDTO? GenerarSesion(UsuarioDTO usuario, 
                                string ip) {
         var sesion =  _dao.GenerarSesion(usuario.ID, ip);                        
-        //sesion.Token = Guid.NewGuid().ToString();
-        
+        //sesion.Token = Guid.NewGuid().ToString();        
         sesion.Token = _generadorTokensService.GenerarToken(usuario,key, noHoras,sesion.ID);
 
         var sesionDTO = new UsuarioSesionDTO() {

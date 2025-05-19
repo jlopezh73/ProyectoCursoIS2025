@@ -2,11 +2,13 @@ using System.Threading.Tasks;
 using CursosUIMono.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using CursosUIMono.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CursosUIMono.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class CursoImagenController : ControllerBase
     {
         private readonly IWebHostEnvironment _environment;
