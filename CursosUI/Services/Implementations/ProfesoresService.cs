@@ -7,76 +7,48 @@ namespace CursosUI.Services.Implementations
 {
     public class ProfesoresService : IProfesoresService
     {
-        //private readonly ProfesoresDAO _profesoresDAO;
+        HttpClient _httpClient;        
+        private string _token;
+        
 
-        public ProfesoresService() //ProfesoresDAO profesoresDAO)
+        public ProfesoresService(IHttpClientFactory httpClientFactory,
+                IHttpContextAccessor httpContextAccessor) 
         {
-            //_profesoresDAO = profesoresDAO;
+            this._httpClient = httpClientFactory.CreateClient("ProfesoresAPI");
+            _token = httpContextAccessor.HttpContext?.Session.GetString("token_usuario")?.ToString() ?? string.Empty;
         }
 
         public async Task<List<ProfesorDTO>> ObtenerTodosLosProfesoresAsync()
         {
-            /*var profesores = await _profesoresDAO.ObtenerTodosAsync();            
-            var profesoresDTO = profesores.Select(profesor => new ProfesorDTO
-            {
-                id = profesor.id,
-                nombre = profesor.nombre,
-                email = profesor.email,
-                telefono = profesor.telefono,
-                especializacion = profesor.especializacion
-            }).ToList();            
-            return profesoresDTO;*/
-            return null;
+            _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_token}");
+            var response = await _httpClient.GetFromJsonAsync<List<ProfesorDTO>>("");        
+            return response;
         }
 
         public async Task<ProfesorDTO> ObtenerProfesorPorIdAsync(int id)
         {
-            /*var profesor = await _profesoresDAO.ObtenerPorIdAsync(id);
-            if (profesor == null) return null;
-
-            // Mapear Profesor a ProfesorDTO
-            return new ProfesorDTO() {
-                id = profesor.id,
-                nombre = profesor.nombre,
-                email = profesor.email,
-                telefono = profesor.telefono,
-                especializacion = profesor.especializacion
-            };*/
-            return null;
+            _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_token}");
+            var response = await _httpClient.GetFromJsonAsync<ProfesorDTO>($"{id}");        
+            return response;
         }
 
         public async Task CrearProfesorAsync(ProfesorDTO profesorDTO)
         {
-            // Mapear ProfesorDTO a Profesor
-            /*var profesor = new Profesor() {
-                id = profesorDTO.id,
-                nombre = profesorDTO.nombre,
-                email = profesorDTO.email,
-                telefono = profesorDTO.telefono,
-                especializacion = profesorDTO.especializacion
-            };
-
-            await _profesoresDAO.AgregarAsync(profesor);*/
+            var response = await _httpClient.PostAsJsonAsync<ProfesorDTO>($"", profesorDTO);            
+            return;
 
         }
 
         public async Task ActualizarProfesorAsync(ProfesorDTO profesorDTO)
         {
-            // Mapear ProfesorDTO a Profesor
-            /*var profesor = new Profesor() {
-                id = profesorDTO.id,
-                nombre = profesorDTO.nombre,
-                email = profesorDTO.email,
-                telefono = profesorDTO.telefono,
-                especializacion = profesorDTO.especializacion
-            };
-
-            await _profesoresDAO.ActualizarAsync(profesor);*/
+            var response = await _httpClient.PutAsJsonAsync<ProfesorDTO>($"{profesorDTO.id}", profesorDTO);            
+            return;
         }
 
         public async Task EliminarProfesorAsync(int id)
         {
-            //await _profesoresDAO.EliminarAsync(id);
+            var response = await _httpClient.DeleteAsync($"{id}");            
+            return;
         }
     }
 }

@@ -23,7 +23,7 @@ public class IdentidadService : IIdentidadService
         this._sesionesService = sesionesService;
     }
 
-public async Task<List<UsuarioDTO>> ObtenerTodosLosUsuariosAsync()
+    public async Task<List<UsuarioDTO>> ObtenerTodosLosUsuariosAsync()
         {
             var usuariosAsync =  await _dao.ObtenerTodosAsync();
             var dtos = usuariosAsync.Select(c => new UsuarioDTO

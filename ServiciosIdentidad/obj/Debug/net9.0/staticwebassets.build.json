@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "66oCTZGY3LajYgQct58fEiX9oocP/4QtY8fjZYiY4EI=",
+  "Source": "ServiciosIdentidad",
+  "BasePath": "_content/ServiciosIdentidad",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

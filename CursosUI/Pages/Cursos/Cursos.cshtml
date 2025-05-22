@@ -34,13 +34,9 @@
                         <td class="text-end">@curso.precio?.ToString("c2")</td>
                         <td>@curso.profesor</td>
                         <td>
-                            
-                            
-                                <button class="btn btn-light btn-sm" onclick="asignarCursoImagen(@curso.id);">
-                                    <i class="fas fa-image"></i> Asignar Imagen
-                                </button>                                
-                            
-                            
+                            <button class="btn btn-light btn-sm" onclick="asignarCursoImagen(@curso.id);">
+                                <i class="fas fa-image"></i> Asignar Imagen
+                            </button>                                
                             <button class="btn btn-link text-danger btn-sm" onclick="eliminarCurso(@curso.id, '@curso.nombre');">
                                 <i class="fas fa-trash-alt"></i> Eliminar
                             </button>

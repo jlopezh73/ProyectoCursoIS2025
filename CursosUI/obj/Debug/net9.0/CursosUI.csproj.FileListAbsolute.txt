@@ -212,3 +212,6 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/j0wheqyzhb-as9ovx8xbd.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qszal0bavk-8pc31uvzsh.gz
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/6wu9bu6idp-pb28te8m38.gz

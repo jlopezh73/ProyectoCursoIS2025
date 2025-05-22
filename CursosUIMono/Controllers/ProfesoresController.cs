@@ -37,7 +37,7 @@ namespace CursosUIMono.Controllers
 
         // GET: api/Profesores/{id}
         [HttpGet("{id}")]
-        [Authorize(Roles = "Administrador General")]
+        [Authorize(Roles = "Administrador Profesores, Administrador General")]
         public async Task<IActionResult> ObtenerPorId(int id)
         {
             var profesor = await _profesoresService.ObtenerProfesorPorIdAsync(id);

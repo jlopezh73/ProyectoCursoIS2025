@@ -8,82 +8,47 @@ namespace CursosUI.Services.Implementations
 {
     public class CursosService : ICursosService
     {
-        //private readonly CursosDAO _dao;
+        HttpClient _httpClient;        
+        private string _token;
+        
 
-        public CursosService() //CursosDAO dao)
+        public CursosService(IHttpClientFactory httpClientFactory,
+                IHttpContextAccessor httpContextAccessor)
         {
-            //_dao = dao;
+            this._httpClient = httpClientFactory.CreateClient("CursosAPI");
+            _token = httpContextAccessor.HttpContext?.Session.GetString("token_usuario")?.ToString() ?? string.Empty;
         }
 
         public async Task<List<CursoDTO>> ObtenerTodosLosCursosAsync()
         {
-            /*var cursosAsync =  await _dao.ObtenerTodosAsync();
-            var dtos = cursosAsync.Select(c => new CursoDTO
-            {
-                id = c.id,
-                nombre = c.nombre,
-                descripcion = c.descripcion,
-                precio = c.precio,
-                fechaInicio = c.fechaInicio,
-                fechaTermino = c.fechaTermino,
-                idProfesor = c.idProfesor,
-                profesor = c.idProfesorNavigation?.nombre??""
-            }).ToList();
-            return dtos;*/
-            return null;
+            _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_token}");
+            var response = await _httpClient.GetFromJsonAsync<List<CursoDTO>>("");        
+            return response;
         }
 
         public async Task<CursoDTO> ObtenerCursoPorIdAsync(int id)
         {
-            /*var c = await _dao.ObtenerPorIdAsync(id);
-            return  new CursoDTO
-            {
-                id = c.id,
-                nombre = c.nombre,
-                descripcion = c.descripcion,
-                precio = c.precio,
-                fechaInicio = c.fechaInicio,
-                fechaTermino = c.fechaTermino,
-                idProfesor = c.idProfesor                
-            };*/
-            return null;
+            _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_token}");
+            var response = await _httpClient.GetFromJsonAsync<CursoDTO>($"{id}");        
+            return response;
         }
 
-        public async Task CrearCursoAsync(CursoDTO c)
+        public async Task CrearCursoAsync(CursoDTO cursoDTO)
         {
-            /*var curso =  new Curso
-            {
-                id = c.id,
-                nombre = c.nombre,
-                descripcion = c.descripcion,
-                precio = c.precio,
-                fechaInicio = c.fechaInicio,
-                fechaTermino = c.fechaTermino,
-                idProfesor = c.idProfesor
-            };
-            await _dao.AgregarAsync(curso);*/
+            var response = await _httpClient.PostAsJsonAsync<CursoDTO>($"", cursoDTO);            
             return;
         }
 
-        public async Task ActualizarCursoAsync(CursoDTO c)
+        public async Task ActualizarCursoAsync(CursoDTO cursoDTO)
         {
-            /*var curso =  new Curso
-            {
-                id = c.id,
-                nombre = c.nombre,
-                descripcion = c.descripcion,
-                precio = c.precio,
-                fechaInicio = c.fechaInicio,
-                fechaTermino = c.fechaTermino,
-                idProfesor = c.idProfesor
-            };
-            await _dao.ActualizarAsync(curso);*/
+            var response = await _httpClient.PutAsJsonAsync<CursoDTO>($"{cursoDTO.id}", cursoDTO);            
             return;
         }
 
         public async Task EliminarCursoAsync(int id)
         {
-            //await _dao.EliminarAsync(id);
+            var response = await _httpClient.DeleteAsync($"{id}");            
+            return;
         }
     }
 }

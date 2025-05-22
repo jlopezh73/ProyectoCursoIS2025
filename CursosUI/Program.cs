@@ -20,7 +20,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddSession(options =>
 {
-    options.Cookie.Name = ".CursosUIMono.Session";
+    options.Cookie.Name = ".CursosUI.Session";
     options.IdleTimeout = TimeSpan.FromMinutes(10);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
@@ -51,24 +51,45 @@ builder.Services.AddScoped<ISesionesService, SesionesService>();
 builder.Services.AddScoped<IBitacoraService, BitacoraService>();
 builder.Services.AddScoped<IGeneradorTokensService, GeneradorTokensJWTService>();
 
-builder.Services.AddAuthentication(options => {    
+builder.Services.AddAuthentication(options =>
+{
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;    
-}).AddJwtBearer(options => {
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
     var config = builder.Configuration;
     options.RequireHttpsMetadata = false;
     options.SaveToken = true;
     var llave = config["JWTSettings:Key"];
-    options.TokenValidationParameters = new TokenValidationParameters() {
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
         ValidIssuer = config["JWTSettings:Issuer"],
         ValidAudience = config["JWTSettings:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(llave)),        
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(llave)),
         ValidateIssuer = true,
         ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true
     };
 });
+
+builder.Services.AddHttpClient("IdentidadAPI", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["API:IdentidadUrl"]);
+});
+
+builder.Services.AddHttpClient("CursosAPI", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["API:CursosUrl"]);
+});
+
+builder.Services.AddHttpClient("ProfesoresAPI", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["API:ProfesoresUrl"]);
+});
+
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddAuthorization();
 
 

@@ -13,6 +13,30 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.jpg",
+      "PackagePath": "staticwebassets/images/uv.jpg"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.png",
+      "PackagePath": "staticwebassets/images/uv.png"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/cursos.js",
+      "PackagePath": "staticwebassets/js/cursos.js"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/participantes.js",
+      "PackagePath": "staticwebassets/js/participantes.js"
+    },
+    {
+      "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/profesores.js",
+      "PackagePath": "staticwebassets/js/profesores.js"
+    },
+    {
       "Id": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

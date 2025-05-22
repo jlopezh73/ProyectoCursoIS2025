@@ -11,69 +11,40 @@ public class IdentidadService : IIdentidadService
     ILogger<IdentidadService> _iLogger;
     RespuestaValidacionUsuarioDTO _respuesta;
     ISesionesService _sesionesService;
-    public IdentidadService(ILogger<IdentidadService> iLogger, 
+    HttpClient _httpClient;        
+    private string _token;
+
+    public IdentidadService(ILogger<IdentidadService> iLogger,
             //UsuariosDAO dao,  
             ISesionesService sesionesService,
-            RespuestaValidacionUsuarioDTO respuesta){
+            RespuestaValidacionUsuarioDTO respuesta,
+            IHttpClientFactory httpClientFactory,
+            IHttpContextAccessor httpContextAccessor)
+    {
         //this._dao = dao;
         this._iLogger = iLogger;
         this._respuesta = respuesta;
         this._sesionesService = sesionesService;
+        this._httpClient = httpClientFactory.CreateClient("IdentidadAPI");
+        _token = httpContextAccessor.HttpContext?.Session.GetString("token_usuario")?.ToString() ?? string.Empty;
     }
 
     public async Task<List<UsuarioDTO>> ObtenerTodosLosUsuariosAsync()
     {
-        /*var usuariosAsync =  await _dao.ObtenerTodosAsync();
-        var dtos = usuariosAsync.Select(c => new UsuarioDTO
-        {
-            ID = c.ID,
-            CorreoElectronico = c.CorreoElectronico,            
-            Nombre = c.Nombre,
-            Paterno = c.Paterno,
-            Materno = c.Materno,
-            Puesto = c.Puesto,
-            Activo = c.Activo,                
-
-        }).ToList();
-        return dtos;*/
-        return null;
+        _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_token}");
+        var response = await _httpClient.GetFromJsonAsync<List<UsuarioDTO>>("usuarios");        
+        return response;
     }
 
     public async Task<RespuestaValidacionUsuarioDTO> 
                     ValidarUsuario(PeticionInicioSesionDTO peticionInicioSesion, String ip)
     {
         try
-        {
-            byte[] encodedPassword = new UTF8Encoding()
-                         .GetBytes(peticionInicioSesion.password);
-            byte[] hash = ((HashAlgorithm)CryptoConfig
-                          .CreateFromName("MD5")).ComputeHash(encodedPassword);
-            string passwordMD5 = BitConverter.ToString(hash)
-                .Replace("-", string.Empty)
-                .ToLower();
-            peticionInicioSesion.password = passwordMD5;
-
-            /*var usuario = await _dao.ObtenerPorPeticionAsync(peticionInicioSesion);
-            
-            if (usuario != null) {
-                var usuarioDTO = new UsuarioDTO() {
-                    ID = usuario.ID,
-                    CorreoElectronico = usuario.CorreoElectronico,                    
-                    Puesto = usuario.Puesto,                
-                };
-                var sesion = _sesionesService.BuscarUltimaSesion(usuarioDTO);
-                if (sesion == null) {
-                    sesion = _sesionesService.GenerarSesion(usuarioDTO, 
-                        ip);
-                } 
-                _respuesta.token = sesion.Token;
-                _respuesta.correcto = true;
-                _respuesta.usuario = usuarioDTO;                                
-            } else {
-                _respuesta.correcto = false;                
-            }            
-            return _respuesta;*/
-            return null;
+        {            
+            var response = await _httpClient.PostAsJsonAsync<PeticionInicioSesionDTO>("validarUsuario", peticionInicioSesion);
+            return response.Content.ReadFromJsonAsync<RespuestaValidacionUsuarioDTO>().Result??
+                new RespuestaValidacionUsuarioDTO() { correcto = false };
+                        
         }
         catch (Exception e)
         {

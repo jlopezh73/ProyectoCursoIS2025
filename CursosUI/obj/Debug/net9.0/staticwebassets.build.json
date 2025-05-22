@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fh+zy5mo1/QfT/McI3gBQ3FgH1ZdAzxa7mccGh1JtPQ=",
+  "Hash": "EDHZwSb2tbHODRWNncqXdmoqdaXyg3QwCFqHzFkElj8=",
   "Source": "CursosUI",
   "BasePath": "_content/CursosUI",
   "Mode": "Default",
@@ -288,6 +288,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/6wu9bu6idp-pb28te8m38.gz",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "js/profesores#[.{fingerprint=pb28te8m38}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/profesores.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ljega1zqqu",
+      "Integrity": "oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/profesores.js"
     },
     {
       "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/714rjnuq7w-fvhpjtyr6v.gz",
@@ -752,6 +773,27 @@
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/j0wheqyzhb-as9ovx8xbd.gz",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "js/cursos#[.{fingerprint=as9ovx8xbd}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/cursos.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rhhhqm2xc4",
+      "Integrity": "MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/cursos.js"
+    },
+    {
       "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/lo0m6eqhqt-ee0r1s7dh0.gz",
       "SourceId": "CursosUI",
       "SourceType": "Discovered",
@@ -918,6 +960,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qszal0bavk-8pc31uvzsh.gz",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "js/participantes#[.{fingerprint=8pc31uvzsh}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/participantes.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "13xytvwrmt",
+      "Integrity": "/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/participantes.js"
     },
     {
       "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qx0rzcalis-47otxtyo56.gz",
@@ -1527,6 +1590,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/logo.png",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "images/logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1luwbormht",
+      "Integrity": "1d1l9Wd+TFo+nZtVSbLEfpJqqcwSj7Dlnffi6tQwxmE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo.png"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.jpg",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "images/uv#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w8pxl04xfe",
+      "Integrity": "8EzEdn8rJ0jJ1NEN3oUtqMZMD9iXvbmW0MG+Z57hY48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/uv.jpg"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.png",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "images/uv#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "50f8kz67jn",
+      "Integrity": "9R044Fi0tFs0yTZxwEQHSEYIYMeDOTYmOcsCnjIm4ys=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/uv.png"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/cursos.js",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "js/cursos#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "as9ovx8xbd",
+      "Integrity": "dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/cursos.js"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/participantes.js",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "js/participantes#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8pc31uvzsh",
+      "Integrity": "DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/participantes.js"
+    },
+    {
+      "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/profesores.js",
+      "SourceId": "CursosUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/",
+      "BasePath": "_content/CursosUI",
+      "RelativePath": "js/profesores#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pb28te8m38",
+      "Integrity": "xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/profesores.js"
     },
     {
       "Identity": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/site.js",
@@ -4088,6 +4277,1146 @@
       ]
     },
     {
+      "Route": "images/logo.1luwbormht.png",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1d1l9Wd+TFo+nZtVSbLEfpJqqcwSj7Dlnffi6tQwxmE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:58:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1luwbormht"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1d1l9Wd+TFo+nZtVSbLEfpJqqcwSj7Dlnffi6tQwxmE="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.png",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1d1l9Wd+TFo+nZtVSbLEfpJqqcwSj7Dlnffi6tQwxmE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:58:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1d1l9Wd+TFo+nZtVSbLEfpJqqcwSj7Dlnffi6tQwxmE="
+        }
+      ]
+    },
+    {
+      "Route": "images/uv.50f8kz67jn.png",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45273"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R044Fi0tFs0yTZxwEQHSEYIYMeDOTYmOcsCnjIm4ys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:58:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "50f8kz67jn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uv.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R044Fi0tFs0yTZxwEQHSEYIYMeDOTYmOcsCnjIm4ys="
+        }
+      ]
+    },
+    {
+      "Route": "images/uv.jpg",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8EzEdn8rJ0jJ1NEN3oUtqMZMD9iXvbmW0MG+Z57hY48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:58:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8EzEdn8rJ0jJ1NEN3oUtqMZMD9iXvbmW0MG+Z57hY48="
+        }
+      ]
+    },
+    {
+      "Route": "images/uv.png",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45273"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R044Fi0tFs0yTZxwEQHSEYIYMeDOTYmOcsCnjIm4ys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:58:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R044Fi0tFs0yTZxwEQHSEYIYMeDOTYmOcsCnjIm4ys="
+        }
+      ]
+    },
+    {
+      "Route": "images/uv.w8pxl04xfe.jpg",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/images/uv.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8EzEdn8rJ0jJ1NEN3oUtqMZMD9iXvbmW0MG+Z57hY48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:58:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w8pxl04xfe"
+        },
+        {
+          "Name": "label",
+          "Value": "images/uv.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8EzEdn8rJ0jJ1NEN3oUtqMZMD9iXvbmW0MG+Z57hY48="
+        }
+      ]
+    },
+    {
+      "Route": "js/cursos.as9ovx8xbd.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/j0wheqyzhb-as9ovx8xbd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000698812020"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1430"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "as9ovx8xbd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cursos.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
+        }
+      ]
+    },
+    {
+      "Route": "js/cursos.as9ovx8xbd.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/cursos.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6475"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "as9ovx8xbd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cursos.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
+        }
+      ]
+    },
+    {
+      "Route": "js/cursos.as9ovx8xbd.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/j0wheqyzhb-as9ovx8xbd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "as9ovx8xbd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cursos.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk="
+        }
+      ]
+    },
+    {
+      "Route": "js/cursos.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/j0wheqyzhb-as9ovx8xbd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000698812020"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1430"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
+        }
+      ]
+    },
+    {
+      "Route": "js/cursos.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/cursos.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6475"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dlUHtL1U23aSJ0oZ2N816CvNX7ahne3nFkYv+rqHfZY="
+        }
+      ]
+    },
+    {
+      "Route": "js/cursos.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/j0wheqyzhb-as9ovx8xbd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MbtO4IyIlzmwUF6jQW3iwymkKYGfEGYiUAgGG4RuPFk="
+        }
+      ]
+    },
+    {
+      "Route": "js/participantes.8pc31uvzsh.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qszal0bavk-8pc31uvzsh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000818330606"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1221"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8pc31uvzsh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/participantes.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
+        }
+      ]
+    },
+    {
+      "Route": "js/participantes.8pc31uvzsh.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/participantes.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5967"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8pc31uvzsh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/participantes.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
+        }
+      ]
+    },
+    {
+      "Route": "js/participantes.8pc31uvzsh.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qszal0bavk-8pc31uvzsh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8pc31uvzsh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/participantes.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg="
+        }
+      ]
+    },
+    {
+      "Route": "js/participantes.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qszal0bavk-8pc31uvzsh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000818330606"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1221"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
+        }
+      ]
+    },
+    {
+      "Route": "js/participantes.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/participantes.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5967"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOwwM/rFI7gqyC6ApNO/a/i7E8NlElZF13+7LcwGT0U="
+        }
+      ]
+    },
+    {
+      "Route": "js/participantes.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/qszal0bavk-8pc31uvzsh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1221"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/bQWS88ylRAAOYIEYnExGVD3vZVSHu9xxLKOBbt/WFg="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/6wu9bu6idp-pb28te8m38.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001036269430"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/profesores.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/6wu9bu6idp-pb28te8m38.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.pb28te8m38.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/6wu9bu6idp-pb28te8m38.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001036269430"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pb28te8m38"
+        },
+        {
+          "Name": "label",
+          "Value": "js/profesores.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.pb28te8m38.js",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/wwwroot/js/profesores.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pb28te8m38"
+        },
+        {
+          "Name": "label",
+          "Value": "js/profesores.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xfKmCjoDoRMqFPGMNcf8OZ08+G3Nv5ya+NzyJH4Gw5U="
+        }
+      ]
+    },
+    {
+      "Route": "js/profesores.pb28te8m38.js.gz",
+      "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/6wu9bu6idp-pb28te8m38.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "964"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 16:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pb28te8m38"
+        },
+        {
+          "Name": "label",
+          "Value": "js/profesores.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oUvK+QQCXA5cNpLD6Unm1gL+PW7cV/zBo/6+Z0Rzx2U="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "/Users/jlopezh73/Proyectos2025/ProyectoCursos/CursosUI/obj/Debug/net9.0/compressed/940syw2h4b-xtxxf3hu2r.gz",
       "Selectors": [
@@ -4112,7 +5441,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 21:54:04 GMT"
+          "Value": "Thu, 22 May 2025 16:31:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4165,7 +5494,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 21:54:04 GMT"
+          "Value": "Thu, 22 May 2025 16:31:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4202,7 +5531,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 21:54:04 GMT"
+          "Value": "Thu, 22 May 2025 16:31:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4249,7 +5578,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 21:54:04 GMT"
+          "Value": "Thu, 22 May 2025 16:31:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4310,7 +5639,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 21:54:04 GMT"
+          "Value": "Thu, 22 May 2025 16:31:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4355,7 +5684,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 21:54:04 GMT"
+          "Value": "Thu, 22 May 2025 16:31:50 GMT"
         },
         {
           "Name": "Cache-Control",
