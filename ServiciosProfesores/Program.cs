@@ -20,19 +20,19 @@ CultureInfo.DefaultThreadCurrentUICulture = culturaMexicana;
 builder.Services.AddDbContext<CursosContext>(options => {
     var connectionString = builder.Configuration.GetConnectionString("CursosDB")??"";
     options.UseMySQL(connectionString);
-}, ServiceLifetime.Singleton);
+}, ServiceLifetime.Scoped);
 
-builder.Services.AddSingleton<ProfesorDTO>();
-builder.Services.AddSingleton<RespuestaPeticionDTO>();
+builder.Services.AddScoped<ProfesorDTO>();
+builder.Services.AddScoped<RespuestaPeticionDTO>();
 
-builder.Services.AddSingleton<ProfesoresDAO>();
+builder.Services.AddScoped<ProfesoresDAO>();
 
 builder.Services.AddHostedService<ProfesoresBackgroundService>();
 
 
 
-builder.Services.AddSingleton<IProfesoresService, ProfesoresService>();
-builder.Services.AddSingleton<IBitacoraService, BitacoraService>();
+builder.Services.AddScoped<IProfesoresService, ProfesoresService>();
+builder.Services.AddScoped<IBitacoraService, BitacoraService>();
 
 builder.Services.AddAuthentication(options => {    
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

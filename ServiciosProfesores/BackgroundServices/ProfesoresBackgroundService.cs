@@ -3,18 +3,19 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Org.BouncyCastle.Asn1.Ocsp;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using ServiciosProfesores.Services.Interfaces;
+using ServiciosProfesores.Entities;
 public class ProfesoresBackgroundService : BackgroundService
 {
     private readonly ILogger<ProfesoresBackgroundService> _logger;
     private IConnection _connection;
     private IChannel _channel;    
-    private readonly IProfesoresService _profesoresService;
+    private readonly IConfiguration _configuration;
 
     public ProfesoresBackgroundService(ILogger<ProfesoresBackgroundService> logger,
-        IProfesoresService profesoresService)
+        IConfiguration configuration)
     {
         _logger = logger;
 
@@ -35,10 +36,10 @@ public class ProfesoresBackgroundService : BackgroundService
                               exclusive: false,
                               autoDelete: false,
                               arguments: null).Wait();
-        _profesoresService = profesoresService;
+        _configuration = configuration;
     }
 
-    protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         _logger.LogInformation("RabbitMQ Listener Service iniciado.");
 
@@ -58,22 +59,36 @@ public class ProfesoresBackgroundService : BackgroundService
 
             int idProfesor = 0;
             int.TryParse(message, out idProfesor);
-            var profesor = await _profesoresService.ObtenerProfesorPorIdAsync(idProfesor);
+            using (var dbContext = new CursosContext(_configuration))
+            {
+                var profesor = dbContext.Profesors
+                    .FirstOrDefault(p => p.id == idProfesor);
+                
+                byte[] responseBytes = null;
+                
+                if (profesor != null)                
+                    responseBytes = Encoding.UTF8.GetBytes(profesor.nombre);
+                else
+                    responseBytes = Encoding.UTF8.GetBytes("--  Profesor no asignado  --");
+                    
+                await _channel.BasicPublishAsync(exchange: string.Empty,
+                routingKey: props.ReplyTo!,
+                mandatory: true,
+                basicProperties: replyProps,
+                body: responseBytes);
+                await _channel.BasicAckAsync(deliveryTag: ea.DeliveryTag, multiple: false);
+                
+            }
+            
 
-            var responseBytes = Encoding.UTF8.GetBytes(profesor.nombre);
-            await _channel.BasicPublishAsync(exchange: string.Empty,
-                    routingKey: props.ReplyTo!,
-                    mandatory: true,
-                    basicProperties: replyProps,
-                    body: responseBytes);
-            await _channel.BasicAckAsync(deliveryTag: ea.DeliveryTag, multiple: false);
+            
         };
 
-        _channel.BasicConsumeAsync("peticiones_profesores",
-                               true,
-                               consumer).Wait();
+        await _channel.BasicConsumeAsync("peticiones_profesores",
+                               false,
+                               consumer);
 
-        return Task.CompletedTask;
+        return;
     }
 
     public override void Dispose()

@@ -31,7 +31,7 @@ namespace ServiciosCursos.Services.Implementations
                 fechaInicio = c.fechaInicio,
                 fechaTermino = c.fechaTermino,
                 idProfesor = c.idProfesor,
-                //profesor = _profesoresService.ObtenerNombreProfesorPorIdAsync(c.idProfesor.Value).Result
+                profesor = _profesoresService.ObtenerNombreProfesorPorIdAsync(c.idProfesor??0)?.Result??""
             }).ToList();
             return dtos;
         }

@@ -1,0 +1,16 @@
+{
+    "Routes": [
+      {
+        "UpstreamHttpMethod": [ "Post" ],
+        "UpstreamPathTemplate": "/api/Identidad/validarUsuario",
+        "DownstreamPathTemplate": "/api/Identidad/validarUsuario",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "localhost", "Port": 5279 }
+        ]
+      }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost:5069"
+    }
+  }
