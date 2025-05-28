@@ -1,0 +1,115 @@
+
+services:
+  cursosui:
+    image: cursos_ui_app
+    depends_on:
+      contenedor_api_gateway: 
+        condition: service_started              
+    ports:
+      - "8080:80"    
+    networks:
+      interna:
+        ipv4_address: 172.16.0.2
+    
+
+  contenedor_api_gateway:
+    image: cursos_api_gateway
+    depends_on:
+      contenedor_servicios_identidad: 
+        condition: service_started        
+      contenedor_servicios_cursos: 
+        condition: service_started        
+      contenedor_servicios_profesores: 
+        condition: service_started                
+    ports:
+      - "8081:80"    
+    networks:
+      interna:
+        ipv4_address: 172.16.0.1
+      
+  contenedor_servicios_identidad:
+    image: cursos_servicios_identidad    
+    depends_on:
+      contenedor_mysql:
+        condition: service_started
+    networks:
+      interna:
+        ipv4_address: 172.16.0.3
+
+  contenedor_servicios_cursos:
+    image: cursos_servicios_cursos
+    depends_on:
+      contenedor_mysql:
+        condition: service_started          
+      contenedor_rabbitmq:
+        condition: service_started    
+    networks:
+      interna:
+        ipv4_address: 172.16.0.4
+    volumes:
+      - fotos-cursos:/ImagenesAPI/Imagenes
+
+  contenedor_servicios_profesores:
+    image: cursos_servicios_profesores
+    depends_on:
+      contenedor_mysql:
+        condition: service_started          
+      contenedor_rabbitmq:
+        condition: service_healthy
+    networks:
+      interna:
+        ipv4_address: 172.16.0.5
+  contenedor_mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+    volumes:
+      - db-cursos:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    expose:
+      - 3306
+    networks:
+      interna:
+        ipv4_address: 172.16.0.6
+  contenedor_mongo:
+    image: mongo
+    restart: always    
+    volumes:
+      - mongodb-cursos:/data/db
+    ports:
+      - "27018:27017"
+    expose:
+      - 27017
+    networks:
+      interna:
+        ipv4_address: 172.16.0.7
+  contenedor_rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - "15673:15672"  # Management UI
+      - "5673:5672"    # RabbitMQ
+    expose:
+      - 15672
+      - 5672
+    networks:
+      interna:
+        ipv4_address: 172.16.0.8
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  fotos-cursos:
+  db-cursos:
+  mongodb-cursos:
+networks:
+  interna: 
+    ipam:       
+      config:
+        - subnet:  172.16.0.0/16
+          gateway: 172.16.0.254
+          
+        

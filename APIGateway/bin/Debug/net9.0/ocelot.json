@@ -1,16 +1,43 @@
 {
     "Routes": [
       {
-        "UpstreamHttpMethod": [ "Post" ],
-        "UpstreamPathTemplate": "/api/Identidad/validarUsuario",
-        "DownstreamPathTemplate": "/api/Identidad/validarUsuario",
+        "UpstreamHttpMethod": [ "Get","Post","Put","Delete" ],
+        "UpstreamPathTemplate": "/api/Identidad/{endpoint}",
+        "DownstreamPathTemplate": "/api/Identidad/{endpoint}",
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
-          { "Host": "localhost", "Port": 5279 }
+          { 
+            "Host": "contenedor_identidad", 
+            "Port": 80 
+          }
+        ]
+      },
+      {
+        "UpstreamHttpMethod": [ "Get","Post","Put","Delete" ],
+        "UpstreamPathTemplate": "/api/Cursos/{endpoint}",
+        "DownstreamPathTemplate": "/api/Cursos/{endpoint}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { 
+            "Host": "contenedor_cursos", 
+            "Port": 80 
+          }
+        ]
+      },
+      {
+        "UpstreamHttpMethod": [ "Get","Post","Put","Delete" ],
+        "UpstreamPathTemplate": "/api/Profesores/{endpoint}",
+        "DownstreamPathTemplate": "/api/Profesores/{endpoint}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { 
+            "Host": "contenedor_profesores", 
+            "Port": 80 
+          }
         ]
       }
     ],
     "GlobalConfiguration": {
-      "BaseUrl": "http://localhost:5069"
+      "BaseUrl": "http://localhost"
     }
-  }
+}

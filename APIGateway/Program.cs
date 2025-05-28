@@ -8,8 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 builder.Configuration
-      .SetBasePath(builder.Environment.ContentRootPath)
-      .AddOcelot(); 
+      .SetBasePath(builder.Environment.ContentRootPath)      
+      .AddJsonFile("ocelot.json")
+      .AddJsonFile($"ocelot.{builder.Environment.EnvironmentName}.json");
   builder.Services
       .AddOcelot(builder.Configuration);
 var app = builder.Build();

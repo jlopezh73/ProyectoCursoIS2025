@@ -25,9 +25,13 @@ namespace ServiciosCursos.Services.Implementations
         private ILogger<ProfesoresService> _logger;
 
 
-        public ProfesoresService(ILogger<ProfesoresService> logger) //ProfesoresDAO profesoresDAO)
+        public ProfesoresService(ILogger<ProfesoresService> logger, IConfiguration configuration) //ProfesoresDAO profesoresDAO)
         {
-            _connectionFactory = new ConnectionFactory { HostName = "localhost" };            
+            _connectionFactory = new ConnectionFactory {
+                HostName = configuration["ConnectionStrings:RabbitMQ_Host"]?? "localhost",
+                UserName = configuration["ConnectionStrings:RabbitMQ_User"]??"guest",
+                Password = configuration["ConnectionStrings:RabbitMQ_Password"]??"guest"
+            };
             this._logger = logger;
         }
 

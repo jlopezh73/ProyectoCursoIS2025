@@ -43,3 +43,4 @@
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/APIGateway/obj/Debug/net9.0/APIGateway.pdb
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/APIGateway/obj/Debug/net9.0/APIGateway.genruntimeconfig.cache
 /Users/jlopezh73/Proyectos2025/ProyectoCursos/APIGateway/obj/Debug/net9.0/ref/APIGateway.dll
+/Users/jlopezh73/Proyectos2025/ProyectoCursos/APIGateway/bin/Debug/net9.0/ocelot.Development.json

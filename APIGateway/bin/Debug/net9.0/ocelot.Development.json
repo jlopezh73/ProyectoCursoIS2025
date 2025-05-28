@@ -7,8 +7,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           { 
-            "Host": "contenedor_servicios_identidad", 
-            "Port": 80 
+            "Host": "localhost", 
+            "Port": 5279 
           }
         ]
       },
@@ -19,8 +19,8 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           { 
-            "Host": "contenedor_servicios_cursos", 
-            "Port": 80 
+            "Host": "localhost", 
+            "Port": 5234 
           }
         ]
       },
@@ -31,13 +31,13 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           { 
-            "Host": "contenedor_servicios_profesores", 
-            "Port": 80 
+            "Host": "localhost", 
+            "Port": 5258 
           }
         ]
       }
     ],
     "GlobalConfiguration": {
-      "BaseUrl": "http://localhost"
+      "BaseUrl": "http://localhost:5069"    
     }
 }

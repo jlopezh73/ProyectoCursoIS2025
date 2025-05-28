@@ -22,10 +22,12 @@ public class ProfesoresBackgroundService : BackgroundService
         // Configuración de conexión a RabbitMQ
         var factory = new ConnectionFactory()
         {
-            HostName = "localhost",
-            UserName = "guest",
-            Password = "guest"
+            HostName = configuration["ConnectionStrings:RabbitMQ_Host"]?? "localhost",
+            UserName = configuration["ConnectionStrings:RabbitMQ_User"]??"guest",
+            Password = configuration["ConnectionStrings:RabbitMQ_Password"]??"guest"
         };
+
+        logger.LogInformation($"Conectando a RabbitMQ en {factory.HostName} con usuario {factory.UserName} y contraseña {factory.Password}.");
 
         _connection = factory.CreateConnectionAsync().Result;
         _channel = _connection.CreateChannelAsync().Result;
@@ -79,9 +81,7 @@ public class ProfesoresBackgroundService : BackgroundService
                 await _channel.BasicAckAsync(deliveryTag: ea.DeliveryTag, multiple: false);
                 
             }
-            
-
-            
+             
         };
 
         await _channel.BasicConsumeAsync("peticiones_profesores",
