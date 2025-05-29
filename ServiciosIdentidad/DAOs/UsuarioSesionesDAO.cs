@@ -7,10 +7,12 @@ namespace ServiciosIdentidad.DAOs
     public class UsuarioSesionesDAO
     {
         private readonly CursosContext _context;
+        private ILogger<UsuarioSesionesDAO> _ilogger;
 
-        public UsuarioSesionesDAO(CursosContext context)
+        public UsuarioSesionesDAO(ILogger<UsuarioSesionesDAO> ilogger, CursosContext context)
         {
             _context = context;
+            _ilogger = ilogger;
         }
         
 
@@ -30,6 +32,7 @@ namespace ServiciosIdentidad.DAOs
                 FechaUltimoAcceso = DateTime.Now,
                 DireccionIP = ip
             };
+            _ilogger.LogInformation($"Generando sesión para el usuario {idUsuario} con IP {ip} en la fecha {sesion.FechaInicio} y fecha de último acceso {sesion.FechaUltimoAcceso}.");
             _context.Usuario_Sesions.Add(sesion);
             _context.SaveChanges();        
             return sesion;
