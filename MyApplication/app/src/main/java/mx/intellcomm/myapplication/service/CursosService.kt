@@ -17,19 +17,19 @@ import retrofit2.http.Path
 
 interface CursosService {
 
-    @GET("courses")
+    @GET("api/Cursos")
     suspend fun obtenerCursos(): Response<List<CursoDTO>>
 
-    @GET("courses/{id}")
+    @GET("api/Cursos/{id}")
     suspend fun obtenerCurso(@Path("id") id: Int): Response<CursoDTO>
 
-    @POST("courses")
+    @POST("api/Cursos")
     suspend fun agregarCurso(@Body course: CursoDTO): Response<CursoDTO>
 
-    @PUT("courses/{id}")
+    @PUT("api/Cursos/{id}")
     suspend fun actualizarCurso(@Path("id") id: Int, @Body course: CursoDTO): Response<CursoDTO>
 
-    @DELETE("courses/{id}")
+    @DELETE("api/Cursos/{id}")
     suspend fun eliminarCurso(@Path("id") id: Int): Response<Void>
 
     companion object {

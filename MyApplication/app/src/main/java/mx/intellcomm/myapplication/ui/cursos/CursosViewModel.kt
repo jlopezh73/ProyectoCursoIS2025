@@ -41,7 +41,7 @@ class CursosViewModel(context: Context) : ViewModel() {
 
             try {
                 val response = repository.obtenerCursos()
-                if (response.isEmpty()) {
+                if (!response.isEmpty()) {
                     _cursos.value = response
                 } else {
                     _cursos.value = emptyList()
@@ -123,8 +123,8 @@ class CursosViewModel(context: Context) : ViewModel() {
                     nombre = _edicionState.value.nombre,
                     descripcion = _edicionState.value.descripcion,
                     precio = _edicionState.value.precio.toDouble(),
-                    fechaInicio = LocalDate.parse(edicionState.value.fechaInicio),
-                    fechaTermini = LocalDate.parse(edicionState.value.fechaTermino),
+                    fechaInicio = edicionState.value.fechaInicio,
+                    fechaTermini = edicionState.value.fechaTermino,
                     profesor = edicionState.value.profesor,
                     idProfesor = edicionState.value.idProfesor
                 )

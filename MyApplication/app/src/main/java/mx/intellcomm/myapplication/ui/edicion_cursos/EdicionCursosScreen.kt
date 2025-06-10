@@ -57,16 +57,16 @@ import mx.intellcomm.myapplication.ui.cursos.CursosViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CourseEditScreen(
-    courseId: Int?,
+fun EdicionCursosScreen(
+    cursoId: Int?,
     viewModel: CursosViewModel = CursosViewModel(LocalContext.current),
     onBack: () -> Unit
 ) {
     val state by viewModel.edicionState.collectAsState()
     val context = LocalContext.current
 
-    LaunchedEffect(courseId) {
-        courseId?.let { viewModel.cargarCurso(it) }
+    LaunchedEffect(cursoId) {
+        cursoId?.let { viewModel.cargarCurso(it) }
     }
 
     LaunchedEffect(viewModel.exitoGuardar) {
@@ -78,14 +78,14 @@ fun CourseEditScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(if (courseId == null) "Nuevo Curso" else "Editar Curso") },
+                title = { Text(if (cursoId == null) "Nuevo Curso" else "Editar Curso") },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(Icons.Default.ArrowBack, contentDescription = "Atrás")
                     }
                 },
                 actions = {
-                    if (courseId != null) {
+                    if (cursoId != null) {
                         IconButton(onClick = {
                             viewModel.eliminarCurso()
                             onBack()

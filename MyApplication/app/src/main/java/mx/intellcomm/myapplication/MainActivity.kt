@@ -34,15 +34,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import mx.intellcomm.myapplication.ui.cursos.ListaCursosScreen
 import mx.intellcomm.myapplication.ui.theme.CourseApplicationTheme
 import mx.intellcomm.myapplication.ui.login.LoginScreen
 import mx.intellcomm.myapplication.ui.splash.SplashScreen
+import mx.intellcomm.myapplication.ui.edicion_cursos.EdicionCursosScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -63,15 +66,12 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun AppNavigation() {
+fun AppNavigation()  {
     val navController = rememberNavController()
     val context = LocalContext.current
 
     NavHost(navController, startDestination = Destinos.Splash.ruta) {
-        composable("splash") { SplashScreen(navController = navController) }
-        composable("login") { LoginScreen(onLoginSuccess = {}) }
-
-
+        composable(Destinos.Splash.ruta) { SplashScreen(navController = navController) }
         composable(Destinos.Login.ruta) {
             LoginScreen(
                 onLoginSuccess = {
@@ -81,11 +81,10 @@ fun AppNavigation() {
                 }
             )
         }
-
         composable(Destinos.Cursos.ruta) {
             ListaCursosScreen(
-                onEditCourse = { courseId ->
-                    navController.navigate("${Destinos.EdicionCursos.ruta}/$courseId")
+                onEditarCurso = { cursoId ->
+                    navController.navigate("${Destinos.EdicionCursos.ruta}/$cursoId")
                 },
                 onLogout = {
                     navController.navigate(Destinos.Login.ruta) {
@@ -95,20 +94,20 @@ fun AppNavigation() {
             )
         }
 
-        /*composable(
-            ruta = "${Destinos.EdicionCursos.ruta}/{cursoId}",
-            argumentos = listOf(navArgument("courseId") {
+        composable(
+            route = "${Destinos.EdicionCursos.ruta}/{cursoId}",
+            arguments = listOf(navArgument("cursoId") {
                 type = NavType.IntType
-                nullable = true
-                defaultValue = null
+                nullable = false
+                defaultValue = 0
             })
         ) { backStackEntry ->
-            val courseId = backStackEntry.arguments?.getInt("courseId")
+            val cursoId = backStackEntry.arguments?.getInt("cursoId")
             EdicionCursosScreen(
-                courseId = courseId,
+                cursoId = cursoId,
                 onBack = { navController.popBackStack() }
             )
-        }*/
+        }
     }
 }
 

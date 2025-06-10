@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import mx.intellcomm.myapplication.Destinos
 import mx.intellcomm.myapplication.R
 
 @Composable
@@ -35,12 +36,13 @@ fun SplashScreen(navController: NavController) {
     LaunchedEffect(Unit) {
         scope.launch {
             delay(3000)
-            navController.navigate("login")
+            navController.navigate(Destinos.Login.ruta)
         }
     }
 
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier
+            .fillMaxSize()
             .background(
                 Brush.linearGradient(
                     0.0f to Color(0,148,56),

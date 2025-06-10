@@ -18,6 +18,7 @@ class LoginDataSource(val context: Context) {
         return try {
             val response = loginService.login(PeticionInicioSesionDTO(username, password))
             if (response.isSuccessful) {
+                SharedPreferencesHelper.saveAuthToken(context, response.body()!!.token)
                 return response.body()!!
             } else {
                 return RespuestaValidacionUsuarioDTO("", null, false)

@@ -45,7 +45,7 @@ import androidx.compose.runtime.getValue
 @Composable
 fun ListaCursosScreen(
     viewModel: CursosViewModel = CursosViewModel(LocalContext.current),
-    onEditCourse: (Int?) -> Unit,
+    onEditarCurso: (Int) -> Unit,
     onLogout: () -> Unit
 ) {
     val scaffoldState = rememberDrawerState(initialValue = DrawerValue.Closed)
@@ -76,7 +76,7 @@ fun ListaCursosScreen(
             },
 
             floatingActionButton = {
-                FloatingActionButton(onClick = { onEditCourse(null) }) {
+                FloatingActionButton(onClick = { onEditarCurso(0) }) {
                     Icon(Icons.Default.Add, contentDescription = "Agregar curso")
                 }
             }
@@ -84,7 +84,7 @@ fun ListaCursosScreen(
             Box(modifier = Modifier.padding(padding)) {
                 if (isLoading) {
                     CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
-                } else if (error != null) {
+                } else if (error != "") {
                     Text(
                         text = error!!,
                         modifier = Modifier.align(Alignment.Center),
@@ -94,7 +94,7 @@ fun ListaCursosScreen(
                         items(cursos) { curso: CursoDTO ->
                             CourseItem(
                                 curso = curso,
-                                onClick = { onEditCourse(curso.id) }
+                                onClick = { onEditarCurso(curso.id) }
                             )
                             Divider()
                         }
